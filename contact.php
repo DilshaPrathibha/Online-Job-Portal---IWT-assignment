@@ -1,22 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/contact.css">
     <title>Contact Us</title>
-    <link rel="icon" href="/images/favicon.webp" type="image/png">
+    <link rel="icon" href="/images/favicon.png" type="image/png">
 </head>
+
 <body>
-    <img src="images/contact-cover" alt="contact cover" id="contact-cover">
-    <div class="contact-forum">
-        <form>
-            <input type="text" name="name" placeholder="Name" required> <br>
-            <input type="email" name="email" placeholder="Email" required> <br>
-            <input type="text" name="phone" placeholder="Phone Number" required> <br>
-            <textarea name="message" placeholder="Your Message..." required></textarea> <br><br>
-            <button type="submit">Submit</button>
-        </form>
+    <div class="contact">
+        <div class="contactImg">
+            <img src="images/contact_cover.png" alt="contact cover" id="contact-cover">
+        </div>
+        <div class="contactForum">
+            <fieldset>
+                <legend><b>Contact Us</b></legend>
+                <form id="contactForm" method="post" action="c_insert.php">
+                    <input type="text" name="cname" placeholder="Name" required> <br>
+                    <input type="email" name="cemail" placeholder="Email" required> <br>
+                    <input type="text" name="cphone" placeholder="Phone Number" required> <br>
+                    <textarea name="cmessage" placeholder="Your Message..." required></textarea> <br><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </fieldset>
+        </div>
     </div>
+
+    <div class="location">
+        <h2>Our Location</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.6421280877094!2d79.84393585334371!3d6.925694100855896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo!5e0!3m2!1sen!2slk!4v1727684962245!5m2!1sen!2slk"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    
+
 </body>
+
 </html>

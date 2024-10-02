@@ -1,0 +1,152 @@
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.contact img {
+    
+    width: 650px;
+    margin: 40px 40px;
+    transition: width 0.3s ease; 
+
+}
+
+/*
+@media screen and (max-width: 1100px) {
+    
+
+    .contact img {
+        width: 60%; 
+        margin: 20px auto; 
+    }
+
+    .contactForum {
+        width: 100%; 
+        padding: 50px 0; 
+    }
+
+    .contactForum form {
+        width: 80%; 
+        max-width: 500px; 
+        margin: auto; 
+        transition: width 0.3s ease; 
+    }
+
+    .contact img,
+    .contactForum {
+        width: 100%;
+        margin: 5px 0; 
+    }
+
+    .contactForum h2 {
+        width: 100%;
+    }
+}
+    */
+
+
+@media screen and (max-width: 780px){
+    
+    
+
+    .contact{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    padding: 20px;
+    }
+
+    .contactForum form {
+        width: 100%;
+    }
+
+    .contact img,
+    .contactForum{
+        width: 100%;
+        margin: 5px 0px;
+    }
+   
+    .contactForum h2{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 780px){
+
+    
+    .contact img {
+        width: 60%; 
+        margin: 20px auto;
+    }
+
+    .contactForum {
+        width: 100%; 
+        padding: 50px 0; 
+    }
+
+    .contactForum form {
+        width: 80%; 
+        max-width: 500px; 
+        margin: auto; 
+        transition: width 0.3s ease; 
+    }
+
+    .contact img,
+    .contactForum {
+        width: 100%;
+        margin: 5px 0; 
+    }
+
+    .contactForum h2 {
+        width: 100%;
+    }
+}
+
+
+.contactForum{
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.contactForum h2{
+    box-sizing: border-box; 
+    text-align: left;
+    margin:auto;
+    width: 100%;
+    padding-left: 75px;
+}
+
+.contactForum form {
+    width: 70%;
+    max-width: 500px;
+    margin: auto;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+
+form button{
+    width: 200px;
+    padding: 10px;
+    margin: auto; 
+    border-radius: 10px;
+    display: block; 
+}
+
+.contactForum button {
+    color: aliceblue;
+    background-color: blue;
+}
+
+.location {
+
+    float: left;
+}
