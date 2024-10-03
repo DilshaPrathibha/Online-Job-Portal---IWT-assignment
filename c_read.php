@@ -21,15 +21,18 @@ if ($result->num_rows > 0) {
 
     echo "<table border='1'>";   /* '' */
 
+    echo "<th> Date/Time <br> (Last Updated) </th>" .
+        "<th> Message </th>" .
+        "<th> Customer Details </th>" .
+        "<th> Status </th>";
+
     while ($row = $result->fetch_assoc()) { /* get rows one by one */
 
         echo "<tr>";
-        echo "<td>" . $row["m_id"] . "</td>" .
-            "<td>" . $row["name"] . "</td>" .
-            "<td>" . $row["email"] . "</td>" .
-            "<td>" . $row["phone"] . "</td>" .
+
+        echo "<td>" . $row["time"] . "</td>" .
             "<td>" . $row["message"] . "</td>" .
-            "<td>" . $row["time"] . "</td>" .
+            "<td>" . $row["name"] . "<br>" . $row["email"] . "<br>" . $row["phone"] . "</td>" .
             "<td>" . $row["status"] . "</td>";
 
         echo "<td><form action='contact_update.php' method='POST'>
