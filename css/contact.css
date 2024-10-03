@@ -1,3 +1,7 @@
+body{
+    margin: 5%;
+}
+
 .contact{
     display: flex;
     justify-content: space-between;
@@ -9,7 +13,9 @@
     
     width: 650px;
     margin: 40px 40px;
-    transition: width 0.3s ease; 
+    transition: width 0.3s ease;
+    
+    
 
 }
 
@@ -40,9 +46,7 @@
         margin: 5px 0; 
     }
 
-    .contactForum h2 {
-        width: 100%;
-    }
+ 
 }
     */
 
@@ -68,18 +72,14 @@
         width: 100%;
         margin: 5px 0px;
     }
-   
-    .contactForum h2{
-        width: 100%;
-    }
 }
 
 @media screen and (min-width: 780px){
 
     
     .contact img {
-        width: 60%; 
-        margin: 20px auto;
+        width: 100%; 
+        padding: 50px 0; 
     }
 
     .contactForum {
@@ -91,18 +91,16 @@
         width: 80%; 
         max-width: 500px; 
         margin: auto; 
-        transition: width 0.3s ease; 
+        transition: width 0.3s ease; /* for an smooth transaction */
     }
 
     .contact img,
     .contactForum {
         width: 100%;
-        margin: 5px 0; 
+        margin: 50px 0; 
     }
 
-    .contactForum h2 {
-        width: 100%;
-    }
+   
 }
 
 
@@ -111,13 +109,7 @@
     padding: 50px 0px;
 }
 
-.contactForum h2{
-    box-sizing: border-box; 
-    text-align: left;
-    margin:auto;
-    width: 100%;
-    padding-left: 75px;
-}
+
 
 .contactForum form {
     width: 70%;
@@ -134,11 +126,12 @@ form textarea {
 }
 
 form button{
-    width: 200px;
+    width: 100px;
     padding: 10px;
     margin: auto; 
     border-radius: 10px;
-    display: block; 
+    display: block;
+    
 }
 
 .contactForum button {
@@ -150,3 +143,17 @@ form button{
 
     float: left;
 }
+
+fieldset{
+    margin: 50px;
+    border-radius: 10px;
+    
+    
+}
+
+legend{
+   
+}
+
+
+
