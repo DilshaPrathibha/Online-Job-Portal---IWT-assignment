@@ -8,7 +8,7 @@ if (isset($_POST["cid"])) {
     $sql = "UPDATE contact_us SET status='responded' WHERE m_id='$ID'";
 
     if ($conn->query($sql) === TRUE) {
-        // Redirect to c_update_admin.php with a success status
+        // Redirect to c_update_admin.php - success status
         header("Location: c_update_admin.php?status=responded");
         exit();
     } else {

@@ -10,7 +10,7 @@ $c_message = $_POST["cmessage"];
 date_default_timezone_set('Asia/Colombo');
 $datetime = date("Y-m-d H:i:s");
 
-// contact_us - table name
+// table name - contact_us 
 $sql = "INSERT INTO contact_us VALUES ('','$c_name', '$c_email', '$c_phone', '$c_message', '$datetime', 'pending')";
 
 if ($conn->query($sql)) {

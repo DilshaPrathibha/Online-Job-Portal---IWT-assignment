@@ -10,7 +10,7 @@ if (isset($_POST['cid'])) {
         header("Location: c_read.php?status=deletesuccess"); // Redirect back to c_read.php with status=success"
         exit();
     } else {
-        header("Location: c_read.php?status=deleteerror"); // status=error"
+        header("Location: c_read.php?status=deleteerror"); // status=deleteerror"
         exit();
     }
 }

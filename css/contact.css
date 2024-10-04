@@ -1,7 +1,7 @@
 /* disable image dragging */
 img {
-    -webkit-user-drag: none; 
-    user-drag: none;         
+    -webkit-user-drag: none;
+    user-drag: none;
 }
 
 body {
@@ -84,28 +84,29 @@ button:hover {
     background-color: #004777;
 }
 
-
 /* map */
 iframe {
     border-radius: 10px;
     border: none;
 }
 
-.location-map, .contact-info {
+.location-map,
+.contact-info {
     flex: 1;
     padding: 0 20px;
 }
 
 .location-info {
     display: flex;
-    justify-content: space-between; 
-    padding: 50px; 
-    background-color: #f1f1f1; 
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f1f1f1;
 }
 
-.contact-info a{
-    text-decoration: none; /* Remove underline */
-    color: #000000; 
+.contact-info a {
+    text-decoration: none;
+    /* Remove underline */
+    color: #000000;
 }
 
 /* Responsive*/
@@ -119,18 +120,19 @@ iframe {
         width: 80%;
         margin-left: 0;
     }
-    
-    iframe { 
+
+    iframe {
         width: 100%;
         height: 250px;
     }
+
     .location-info {
         flex-direction: column;
         text-align: center;
     }
 }
 
-@media (min-width: 800px){
+@media (min-width: 800px) {
     .contactForum {
         flex: 1;
         margin-left: 2%;
