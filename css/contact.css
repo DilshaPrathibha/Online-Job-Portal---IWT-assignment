@@ -1,159 +1,140 @@
-body{
-    margin: 5%;
+/* disable image dragging */
+img {
+    -webkit-user-drag: none; 
+    user-drag: none;         
 }
 
-.contact{
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Contact section  */
+.contact {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-
-}
-
-.contact img {
-    
-    width: 650px;
-    margin: 40px 40px;
-    transition: width 0.3s ease;
-    
-    
-
-}
-
-/*
-@media screen and (max-width: 1100px) {
-    
-
-    .contact img {
-        width: 60%; 
-        margin: 20px auto; 
-    }
-
-    .contactForum {
-        width: 100%; 
-        padding: 50px 0; 
-    }
-
-    .contactForum form {
-        width: 80%; 
-        max-width: 500px; 
-        margin: auto; 
-        transition: width 0.3s ease; 
-    }
-
-    .contact img,
-    .contactForum {
-        width: 100%;
-        margin: 5px 0; 
-    }
-
- 
-}
-    */
-
-
-@media screen and (max-width: 780px){
-    
-    
-
-    .contact{
-    display: flex;
-    flex-wrap: wrap;
-
     justify-content: center;
-    padding: 20px;
-    }
-
-    .contactForum form {
-        width: 100%;
-    }
-
-    .contact img,
-    .contactForum{
-        width: 100%;
-        margin: 5px 0px;
-    }
+    align-items: center;
+    padding: 50px;
 }
 
-@media screen and (min-width: 780px){
-
-    
-    .contact img {
-        width: 100%; 
-        padding: 50px 0; 
-    }
-
-    .contactForum {
-        width: 100%; 
-        padding: 50px 0; 
-    }
-
-    .contactForum form {
-        width: 80%; 
-        max-width: 500px; 
-        margin: auto; 
-        transition: width 0.3s ease; /* for an smooth transaction */
-    }
-
-    .contact img,
-    .contactForum {
-        width: 100%;
-        margin: 50px 0; 
-    }
-
-   
+.contactImg {
+    flex: 1;
+    text-align: center;
+    min-width: 400px;
 }
 
-
-.contactForum{
+.contactImg img {
     width: 100%;
-    padding: 50px 0px;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
 }
 
-
-
-.contactForum form {
-    width: 70%;
+/* form div */
+.contactForum {
+    flex: 1;
     max-width: 500px;
-    margin: auto;
 }
 
-form input,
-form textarea {
+/* Fieldset and form  */
+fieldset {
+    border: 2px solid #005f99;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+legend {
+    font-size: 1.5em;
+    color: #005f99;
+}
+
+/* Input and textarea */
+input[type="text"],
+input[type="email"],
+textarea {
     width: 100%;
     padding: 10px;
-    margin: 10px 0px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Button */
+button {
+    background-color: #005f99;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004777;
+}
+
+
+/* map */
+iframe {
     border-radius: 10px;
+    border: none;
 }
 
-form button{
-    width: 100px;
-    padding: 10px;
-    margin: auto; 
-    border-radius: 10px;
-    display: block;
+.location-map, .contact-info {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.location-info {
+    display: flex;
+    justify-content: space-between; 
+    padding: 50px; 
+    background-color: #f1f1f1; 
+}
+
+.contact-info a{
+    text-decoration: none; /* Remove underline */
+    color: #000000; 
+}
+
+/* Responsive*/
+@media (max-width: 800px) {
+    .contact {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contactForum {
+        width: 80%;
+        margin-left: 0;
+    }
     
+    iframe { 
+        width: 100%;
+        height: 250px;
+    }
+    .location-info {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
-.contactForum button {
-    color: aliceblue;
-    background-color: blue;
+@media (min-width: 800px){
+    .contactForum {
+        flex: 1;
+        margin-left: 2%;
+        margin-right: 4%;
+        max-width: 500px;
+    }
 }
-
-.location {
-
-    float: left;
-}
-
-fieldset{
-    margin: 50px;
-    border-radius: 10px;
-    
-    
-}
-
-legend{
-   
-}
-
-
-
