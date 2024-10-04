@@ -139,4 +139,8 @@ iframe {
         margin-right: 4%;
         max-width: 500px;
     }
+
+    .location-map{
+        margin-left: 10%;
+    }
 }

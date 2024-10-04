@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 04, 2024 at 01:15 AM
+-- Generation Time: Oct 04, 2024 at 10:32 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -42,28 +42,38 @@ CREATE TABLE `contact_us` (
 --
 
 INSERT INTO `contact_us` (`m_id`, `name`, `email`, `phone`, `message`, `time`, `status`) VALUES
-(6, 'sa', 'dtest@gmail.com', '$0775556644899', 'message', '2024-10-03 22:10:04', 'responded'),
-(20, 'sa', 'dtest@gmail.com', '$0775556644899', 'message', '2024-10-03 22:09:53', 'responded'),
-(21, 'sa', 'dtest@gmail.com', '$0775556644899', 'message', '2024-10-03 22:21:06', 'responded'),
-(22, 'sa', 'dtest@gmail.com', '$0775556644899', 'mes ssage and the ', '2024-10-03 23:03:47', 'pending'),
-(24, 'sa', 'dtest@gmail.com', '$0775556644899', 'message', '2024-10-03 21:46:40', 'responded'),
-(26, 'sa', 'dtest@gmail.com', '$0775556644899', 'message', '2024-10-03 21:55:19', 'responded'),
-(28, 'sa', 'dtest@gmail.com', '$0775556644899', 'message', '2024-10-03 22:04:32', 'responded'),
-(29, 'sa', 'dtest@gmail.com', '$0775556644899', 'dscsdvc', '2024-10-03 22:10:09', 'responded'),
-(30, 'sa', 'dtest@gmail.com', '$0775556644899', 'message', '2024-10-03 22:10:10', 'responded'),
-(32, 'testd dd testdd', 'testdd@gg.com', 'dss', 'sdc', '2024-10-03 22:23:25', 'pending'),
-(33, 'upupupup 33', 'testdd@gg.com', 'dss', 'sdc', '2024-10-03 22:10:14', 'pending'),
-(36, 'testd dd testdd', 'testdd@gg.com', 'fdb', 'fdb', '2024-10-03 22:21:10', 'pending'),
-(37, 'testd dd testdd', 'testdd@gg.com', 'sdv', 'sdvh', '2024-10-03 19:48:10', 'pending'),
-(39, 'testd dd testdd', 'testdd@gg.com', 'dsc', 'sdc', '2024-10-03 17:13:54', 'pending'),
-(41, 'testd dd testdd', 'testdd@gg.com', 'sdv', 'dsv', '2024-10-03 17:14:16', 'pending'),
-(43, 'testd dd testdd', 'testdd@gg.com', 've', 'erv', '2024-10-03 22:20:57', 'responded'),
-(44, 'testd dd testdd', 'testdd@gg.com', 'fdb', 'bfd', '2024-10-03 17:15:10', 'pending'),
-(45, 'testd dd testdd', 'testdd@gg.com', 'fdb', 'bfd', '2024-10-03 17:15:15', 'pending'),
-(46, 'testd dd testdd', 'testdd@gg.com', 'fdb', 'bfd', '2024-10-03 17:15:27', 'pending'),
-(47, 'testd dd testdd', 'testdd@gg.com', 'fdb', 'kk', '2024-10-03 17:50:39', 'pending'),
-(50, 'testd dd testdd', 'testdd@gg.com', 'fgbf', 'fgb', '2024-10-03 17:16:10', 'pending'),
-(51, 'testd dd testdd', 'testdd@gg.com', 'erg', 'erg', '2024-10-03 21:50:50', 'responded');
+(73, 'Saman Kumara', 'samankumara@gmail.com', '0778563482', 'I need assistance with updating my profile information.', '2024-10-04 20:31:32', 'responded'),
+(74, 'Emily White', 'emilywhite@outlook.com', '0784582314', 'I am having trouble submitting job applications. The form keeps giving an error.', '2024-10-04 20:22:27', 'pending'),
+(75, 'Aravinda Jayasooriya', 'jayasooriya@gmail.com', '0767824591', 'I received an email regarding my application, but I didn’t understand the next steps.', '2024-10-04 20:31:48', 'responded'),
+(76, 'Dilini Chamodya', 'dchamodya2002@gmail.com', '0727569548', 'The website crashes when I try to upload my resume. Please assist.', '2024-10-04 20:25:51', 'pending'),
+(77, 'Hasantha Madushan', 'hasamadushan12@gmail.com', '0750120365', 'I want to delete my account but can not find the option in my settings.', '2024-10-04 20:29:23', 'pending');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `feedback`
+--
+
+CREATE TABLE `feedback` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `type` enum('general','bug','feature') NOT NULL,
+  `rating` int(1) NOT NULL,
+  `message` text NOT NULL,
+  `time` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `feedback`
+--
+
+INSERT INTO `feedback` (`id`, `name`, `email`, `type`, `rating`, `message`, `time`) VALUES
+(5, 'Damith De Silva', 'damithsilva@gmail.com', 'general', 5, 'Great platform! Easy to navigate, and the job search features are excellent. Keep up the good work!', '2024-10-04 20:00:40'),
+(6, 'Mahinda Jayasinghe', 'mahindajayasinghe@yahoo.com', 'bug', 2, ' job search filters kept showing jobs outside the selected categories', '2024-10-04 20:04:59'),
+(8, 'Deepika Kumari', 'deepikakumari1985@gmail.com', 'feature', 3, 'If the platform had a resume builder, it would be easier for job seekers to apply directly', '2024-10-04 20:09:00'),
+(9, 'David Brown', 'davidbrown@gmail.com', 'general', 5, 'Excellent job!', '2024-10-04 20:09:58'),
+(10, 'Kasun Sampath Samarasinghe', 'ksamarasinghe@hotmail.com', 'general', 4, 'Great portal, but loading could be faster.', '2024-10-04 20:14:04');
 
 --
 -- Indexes for dumped tables
@@ -76,6 +86,12 @@ ALTER TABLE `contact_us`
   ADD PRIMARY KEY (`m_id`);
 
 --
+-- Indexes for table `feedback`
+--
+ALTER TABLE `feedback`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -83,7 +99,13 @@ ALTER TABLE `contact_us`
 -- AUTO_INCREMENT for table `contact_us`
 --
 ALTER TABLE `contact_us`
-  MODIFY `m_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
+  MODIFY `m_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
+
+--
+-- AUTO_INCREMENT for table `feedback`
+--
+ALTER TABLE `feedback`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -37,7 +37,7 @@
             <h2>Contact Information</h2>
             <p><b>Mailing Address:</b> <br>EH Cooray Building, No.24: 5th Floor, E.H.Cooray Tower, B535, Matara</p>
             <p><b>Phone:</b> <br><a href="tel:+94123456789">+94 123456789</a></p>
-            <p><b>Email:</b> <br> <a href="mailto:my.jobs@gmail.com">support@jobsadawiya.com</a></p>
+            <p><b>Email:</b> <br> <a href="mailto:my.jobs@gmail.com">contact@jobsadawiya.com</a></p>
         </div>
     </section>
 
