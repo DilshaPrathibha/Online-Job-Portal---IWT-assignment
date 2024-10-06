@@ -10,13 +10,14 @@
 </head>
 
 <body>
+    <h1 class="title"> For Any Type Of Clarifications Don't Hasitate To Contact US </h1>
     <div class="contact">
         <div class="contactImg">
             <img src="images/contact_cover.png" alt="contact cover" id="contact-cover">
         </div>
         <div class="contactForum">
-            <fieldset>
-                <legend><b>Contact Us</b></legend>
+            
+                <dev><b>Contact Us...</b></dev>
                 <form class="contactForm" method="post" action="c_insert.php">
                     <input type="text" name="cname" placeholder="Name" required> <br>
                     <input type="email" name="cemail" placeholder="Email" required> <br>
@@ -24,7 +25,7 @@
                     <textarea name="cmessage" placeholder="Your Message..." required></textarea> <br><br>
                     <button type="submit">Submit</button>
                 </form>
-            </fieldset>
+            
         </div>
     </div>
 

@@ -36,11 +36,7 @@ body {
 .contactForum {
     flex: 1;
     max-width: 500px;
-}
-
-/* Fieldset and form  */
-fieldset {
-    border: 2px solid #005f99;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     padding: 20px;
     background-color: #ffffff;
@@ -81,7 +77,7 @@ button {
 }
 
 button:hover {
-    background-color: #004777;
+    background-color: #003c64;
 }
 
 /* map */
@@ -109,6 +105,17 @@ iframe {
     color: #000000;
 }
 
+.title {
+    text-align: center; 
+    margin: 40px 0;
+    color: #333;
+    font-family: 'Arial', sans-serif; 
+    font-weight: bold;
+    background-color:    #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+}
+
 /* Responsive*/
 @media (max-width: 800px) {
     .contact {
@@ -130,6 +137,10 @@ iframe {
         flex-direction: column;
         text-align: center;
     }
+
+    .title{
+        font-size: 1.1rem; 
+    }
 }
 
 @media (min-width: 800px) {
@@ -143,4 +154,9 @@ iframe {
     .location-map{
         margin-left: 10%;
     }
+
+    .title{
+        font-size: 1.6rem; 
+    }
+
 }

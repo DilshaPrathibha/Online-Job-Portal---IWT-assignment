@@ -4,6 +4,12 @@ require 'c_config.php';
 $sql = "SELECT m_id, name, email, phone, message, time, status FROM contact_us";
 $result = $conn->query($sql);
 
+if (isset($_GET['status'])) {
+    if ($_GET['status'] == 'deleteerror') {
+        echo "<script>alert('Error deleting message. Please try again.');</script>";
+    } 
+}
+
 if ($result->num_rows > 0) {
     echo "<table border='1'>";   /* '' */
 
@@ -43,7 +49,7 @@ if ($result->num_rows > 0) {
                       </td>";
             }
 
-            echo "<td><form action='c_delete.php' method='POST' onsubmit='return confirmDelete();'>
+            echo "<td><form action='c_delete_admin.php' method='POST' onsubmit='return confirmDelete();'>
     <input type='hidden' name='cid' value='" . $row["m_id"] . "'> 
     <input type='submit' value='Delete'> 
     </form></td>";
@@ -63,5 +69,10 @@ $conn->close(); // Close the connection
     // confirm as responded
     function confirmresponded() {
         return confirm("Are sure you want to mark this message as pending?");
+    }
+
+    
+    function confirmDelete() {
+        return confirm("Are sure you want to delete this message?");
     }
 </script>

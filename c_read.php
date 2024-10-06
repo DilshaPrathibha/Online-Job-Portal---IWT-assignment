@@ -30,19 +30,55 @@ if ($result->num_rows > 0) {
 
         echo "<tr>";
 
-        echo "<td>" . $row["time"] . "</td>" .
-            "<td>" . $row["message"] . "</td>" .
-            "<td>" . $row["name"] . "<br>" . $row["email"] . "<br>" . $row["phone"] . "</td>" .
-            "<td>" . $row["status"] . "</td>";
 
-        echo "<td><form action='contact_update.php' method='POST'>
-    <input type='hidden' name='cid' value='" . $row["m_id"] . "'>
-    <input type='submit' value='Edit'></form></td>";
 
-        echo "<td><form action='c_delete.php' method='POST' onsubmit='return confirmDelete();'>
+
+        // Calculate the time difference between current time and message time
+        $messageTime = strtotime($row["time"]);
+        $currentTime = time();
+        $timeDiff = $currentTime - $messageTime; // Time difference in seconds
+
+        // Define what "recent" means (e.g., messages within the last 24 hours = 86400 seconds)
+        $recentThreshold = 86400;
+
+        // Calculate the time difference between current time and message time
+        $messageTime = strtotime($row["time"]);
+        $currentTime = time();
+        $timeDiff = $currentTime - $messageTime; // Time difference in seconds
+
+        // Define what "recent" means (e.g., messages within the last 24 hours = 86400 seconds)
+        $recentThreshold = 400;
+
+
+
+        
+        if ($timeDiff <= $recentThreshold) {
+            echo "<td>" . $row["time"] . "</td>" .
+                "<td>" . $row["message"] . "</td>" .
+                "<td>" . $row["name"] . "<br>" . $row["email"] . "<br>" . $row["phone"] . "</td>" .
+                "<td>" . $row["status"] . "</td>";
+
+
+            if ($row["status"] == 'pending') {
+                echo "<td><form action='contact_update.php' method='POST'>
+        <input type='hidden' name='cid' value='" . $row["m_id"] . "'>
+        <input type='submit' value='Edit' ></form></td>";
+
+                echo "<td><form action='c_delete.php' method='POST' onsubmit='return confirmDelete();'>
     <input type='hidden' name='cid' value='" . $row["m_id"] . "'> 
-    <input type='submit' value='Delete'> 
-    </form></td>"; /* input type='hidden'*/
+    <input type='submit' value='Delete' > 
+    </form></td>";
+            } else {
+                echo "<td><form action='contact_update.php' method='POST'>
+        <input type='hidden' name='cid' value='" . $row["m_id"] . "'>
+        <input type='submit' value='Edit' disabled></form></td>";
+
+                echo "<td><form action='c_delete.php' method='POST' onsubmit='return confirmDelete();'>
+        <input type='hidden' name='cid' value='" . $row["m_id"] . "'> 
+        <input type='submit' value='Delete'> 
+        </form></td>";
+            }
+        }
 
         echo "</tr>";
     }
