@@ -202,6 +202,26 @@ if ($result->num_rows > 0) {
     // Initial load
     displayJobs(currentPage);
     displayPagination();
+
+
+
+/* stop scrolling filters on the footer */
+    window.addEventListener('scroll', () => {
+    const filters = document.querySelector('.filters');
+    const footer = document.querySelector('footer');
+
+    const filtersHeight = filters.offsetHeight;
+    const footerTop = footer.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    // Check if filters should stop being sticky and scroll with the footer
+    if (footerTop < windowHeight) {
+        filters.classList.add('footer-fixed');
+    } else {
+        filters.classList.remove('footer-fixed');
+    }
+});
+
 </script>
 
 

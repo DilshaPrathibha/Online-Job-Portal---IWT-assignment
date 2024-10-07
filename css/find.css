@@ -284,7 +284,7 @@ main {
 }
 
 .pagination a.active {
-    background-color: #007bff;
+    background-color: #1477b9;
     color: white;
 }
 
@@ -338,3 +338,54 @@ main {
         width: 100%;
     }
 }
+
+
+
+/* stop scrolling filters on the footer */
+.filters {
+    
+    position: sticky;
+    
+    max-height: 80vh; /* Prevents it from going out of the viewport */
+    
+}
+
+.footer-fixed {
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+
+
+/* Set the navbar at the top with a high z-index */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;  /* Very high to stay in front of all elements */
+    background-color: #fff; /* Ensure the navbar has a background to hide content behind it */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for a clearer separation */
+}
+
+/* Make the filters sticky and ensure it is below the navbar */
+.filters {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 70px;  /* Adjust this value to match the height of your navbar */
+    max-height: calc(100vh - 70px);  /* Adjust based on the navbar height */
+    overflow-y: auto;
+    z-index: 1;  /* Lower than the navbar */
+}
+
+/* Filters stop scrolling and stick at the footer */
+.footer-fixed {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;  /* Lower than the navbar */
+}
+
+
+

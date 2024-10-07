@@ -27,7 +27,7 @@
                     <input type="text" name="cname" placeholder="Name" required> <br>
                     <input type="email" name="cemail" placeholder="Email" required> <br>
                     <input type="text" name="cphone" placeholder="Phone Number" required> <br>
-                    <textarea name="cmessage" placeholder="Your Message..." required></textarea> <br><br>
+                    <textarea name="cmessage" placeholder="Your Message..." required></textarea> <br><br><br><br>
                     <button type="submit">Submit</button>
                 </form>
             
@@ -44,6 +44,7 @@
             <p><b>Mailing Address:</b> <br>EH Cooray Building, No.24: 5th Floor, E.H.Cooray Tower, B535, Matara</p>
             <p><b>Phone:</b> <br><a href="tel:+94123456789">+94 123456789</a></p>
             <p><b>Email:</b> <br> <a href="mailto:my.jobs@gmail.com">contact@jobsadawiya.com</a></p>
+            <p><b><a href="feedback.php">Send your feedback</a></b> <!--apply css-->
         </div>
     </section>
 

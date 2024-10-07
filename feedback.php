@@ -41,6 +41,7 @@
 
         .feedback-form h1 {
             text-align: center;
+            margin-top: 80px;
             margin-bottom: 20px;
             font-size: 24px;
             color: #333;

@@ -45,7 +45,7 @@ if (isset($_POST['cid'])) {
             font-family: Arial, sans-serif;
             background-color: #f9f9f9;
             margin: 0;
-            padding: 20px;
+           
         }
 
         .contactForum {
@@ -59,6 +59,7 @@ if (isset($_POST['cid'])) {
 
         fieldset {
             border: none;
+            margin: 20px;
         }
 
         legend {
