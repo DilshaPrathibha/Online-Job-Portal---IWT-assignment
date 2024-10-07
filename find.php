@@ -82,21 +82,16 @@ if ($result->num_rows > 0) {
             <!-- Filters Section -->
             <aside class="filters">
                 <form method="POST" action="find.php">
-                    <select name="industry">
-                        <option>All Industries</option>
-                        <option>Technology</option>
-                        <option>Marketing</option>
-                        <option>Education</option>
-                    </select>
                     <select name="employment_type">
                         <option value="">Job Type</option>
                         <option value="Full-time" <?php if ($search_job_type == 'Full-time') echo 'selected'; ?>>Full-time</option>
                         <option value="Part-time" <?php if ($search_job_type == 'Part-time') echo 'selected'; ?>>Part-time</option>
                     </select>
                     <select>
-                        <option>Job Level</option>
+                        <option>Experience Level</option>
                         <option>Entry Level</option>
-                        <option>Mid Level</option>
+                        <option>Mid-Level</option>
+                        <option>Senior Level</option>
                     </select>
                     <select>
                         <option>Posted</option>
