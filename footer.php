@@ -103,7 +103,7 @@
                         <li><a href="../home/home.php">Home</a></li>
                         <li><a href="../Bupathifnl/aboutus.php">About Us</a></li>
                         <li><a href="../Malith/postajob.php">Post a Job</a></li>
-                        <li><a href="../Dilsha/find.php">Find a Job</a></li>
+                        <li><a href="find.php">Find a Job</a></li>
                         <li><a href="../Shamal/index.php">Intership</a></li>
                         <li><a href="../Bupathifnl/signup.php">Sign up</a></li>
                     </ul>
@@ -111,8 +111,8 @@
                 <div class="footer-col">
                     <h4>Get Help</h4>
                     <ul>
-                        <li><a href="../Dilsha/faq.php">FAQ</a></li>
-                        <li><a href="../Dilsha/contact.php">Contact Us</a></li>
+                        <li><a href="faq.php">FAQ</a></li>
+                        <li><a href="contact.php">Contact Us</a></li>
                         <li><a href="../Malith/package.php">payment options</a></li>
                         <li><a href="#">www.JobsAdawiya@gmail.com</a></li>
                     </ul>

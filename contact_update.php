@@ -1,5 +1,14 @@
 <?php
 require 'c_config.php';
+include('navbar.php');
+
+
+if (isset($_GET['status'])) {
+    if ($_GET["status"] == "incompleteupdate") {
+        echo "<script>alert('All fields required!');</script>";
+    }
+}
+
 
 if (isset($_POST['cid'])) {
     $cid = $_POST['cid'];
@@ -28,74 +37,78 @@ if (isset($_POST['cid'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update Messages</title>
     <style>
+        legend {
+            padding-top: 80px;
+        }
+
         body {
             font-family: Arial, sans-serif;
-            background-color: #f9f9f9; /* Light background for the entire page */
+            background-color: #f9f9f9;
             margin: 0;
-            padding: 20px; /* Padding for the body */
+            padding: 20px;
         }
 
         .contactForum {
-            max-width: 600px; /* Limit the width of the form */
-            margin: auto; /* Center the form */
-            background-color: white; /* White background for the form */
-            border-radius: 8px; /* Rounded corners */
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for the form */
-            padding: 20px; /* Padding inside the form */
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
         }
 
         fieldset {
-            border: none; /* Remove default border */
+            border: none;
         }
 
         legend {
-            font-size: 24px; /* Larger font for the legend */
-            color: #333; /* Dark color for the text */
+            font-size: 24px;
+            color: #333;
         }
 
         label {
-            font-weight: bold; /* Bold labels */
-            display: block; /* Make labels block elements */
-            margin: 10px 0 5px; /* Margin for spacing */
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
         }
 
         input[type="text"],
         input[type="email"],
         textarea {
-            width: 100%; /* Full width inputs */
-            padding: 10px; /* Padding inside inputs */
-            margin-bottom: 15px; /* Margin below inputs */
-            border: 1px solid #ddd; /* Light border */
-            border-radius: 4px; /* Rounded corners */
-            font-size: 16px; /* Font size */
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
         }
 
         textarea {
-            height: 100px; /* Height for the textarea */
-            resize: vertical; /* Allow vertical resizing */
+            height: 100px;
+            resize: vertical;/
         }
 
         input[type="submit"] {
-            background-color: #4CAF50; /* Green background */
-            color: white; /* White text */
-            border: none; /* No border */
-            padding: 10px 15px; /* Padding inside button */
-            border-radius: 4px; /* Rounded corners */
-            cursor: pointer; /* Pointer cursor on hover */
-            font-size: 16px; /* Font size */
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
         }
 
         input[type="submit"]:hover {
-            background-color: #45a049; /* Darker green on hover */
+            background-color: #45a049;
         }
 
         @media screen and (max-width: 768px) {
             .contactForum {
-                width: 90%; /* Full width on small screens */
+                width: 90%;
             }
 
             legend {
-                font-size: 20px; /* Smaller legend font for mobile */
+                font-size: 20px;
             }
         }
     </style>
@@ -105,7 +118,7 @@ if (isset($_POST['cid'])) {
 
     <div class="contactForum">
         <fieldset>
-            <legend><b>Contact Us</b></legend>
+            <legend><b>Update Message</b></legend>
             <form id="contacthistory" method="post" action="c_update.php">
                 <input type="hidden" name="cid" value="<?= $cid ?>">
                 <label for="name">Name:</label>
@@ -128,3 +141,8 @@ if (isset($_POST['cid'])) {
 </body>
 
 </html>
+
+
+<?php 
+    include('footer.php');
+?>

@@ -112,7 +112,7 @@
 
         .feedback-form button {
             padding: 12px;
-            background-color: #007bff;
+            background-color: #3498db;
             color: #fff;
             border: none;
             border-radius: 4px;
@@ -122,7 +122,7 @@
         }
 
         .feedback-form button:hover {
-            background-color: #0056b3;
+            background-color: #2980b9;
         }
     </style>
 </head>

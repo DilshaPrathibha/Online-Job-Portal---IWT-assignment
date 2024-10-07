@@ -1,5 +1,6 @@
 <?php
 require 'c_config.php';
+include('navbar.php');
 
 $sql = "SELECT m_id, name, email, phone, message, time, status FROM contact_us";
 $result = $conn->query($sql);
@@ -10,10 +11,10 @@ if (isset($_GET['status'])) {
     } 
 }
 
-echo "<h1 class='title-center'>Message Management</h1>";  // Centered heading with CSS class
+echo "<h1 class='title-center'>Message Management</h1>";  
 
 if ($result->num_rows > 0) {
-    echo "<table class='message-table'>";  // Apply CSS class
+    echo "<table class='message-table'>";  
 
     echo "<thead><tr>" . 
     "<th> Message ID </th>" . 
@@ -25,7 +26,7 @@ if ($result->num_rows > 0) {
     "<th> Status </th>" . 
     "<th> Actions </th></tr></thead><tbody>";
 
-    while ($row = $result->fetch_assoc()) { /* get rows one by one */
+    while ($row = $result->fetch_assoc()) { // get rows one by one 
 
         echo "<tr>";
         echo "<td>" . $row["m_id"] . "</td>" . 
@@ -81,20 +82,20 @@ $conn->close(); // Close the connection
     }
 </script>
 
-<!-- CSS Styling -->
+
 <style>
-    /* Style for centering the title */
 .title-center {
+    padding-top: 80px;
     text-align: center;
     font-size: 24px;
     margin-top: 20px;
     color: #333;
 }
 
-/* Style for the table */
+
 .message-table {
-    width: 80%; /* Reduce the width of the table */
-    margin: 20px auto; /* Center the table */
+    width: 80%; 
+    margin: 20px auto;
     border-collapse: collapse;
     font-size: 16px;
     text-align: left;
@@ -105,7 +106,7 @@ $conn->close(); // Close the connection
 }
 
 .message-table th, .message-table td {
-    padding: 10px 12px; /* Reduced padding */
+    padding: 10px 12px; 
     border: 1px solid #ddd;
 }
 
@@ -118,10 +119,10 @@ $conn->close(); // Close the connection
     background-color: #f1f1f1;
 }
 
-/* Action buttons style */
+
 .respond-btn , .pending-btn, .delete-btn{
-    min-width: 100px; /* Ensures all buttons are at least 100px wide */
-    display: inline-block; /* Ensures buttons stay in line */
+    min-width: 100px; 
+    display: inline-block; 
     text-align: center;
     padding: 8px 16px;
     font-size: 14px;
@@ -129,54 +130,54 @@ $conn->close(); // Close the connection
     border: none;
     color: #fff;
     border-radius: 4px;
-    margin: 0 5px;  /* Spacing between buttons */
+    margin: 0 5px; 
 }
 
 .respond-btn {
-    background-color: #4CAF50;  /* Green */
+    background-color: #4CAF50; 
 }
 
 .pending-btn{
-    background-color: #2196F3;  /* Blue */
+    background-color: #2196F3; 
 }
 
 .delete-btn {
-    background-color: #f44336;  /* Red */
+    background-color: #f44336; 
 }
 
 .respond-btn , .pending-btn, .delete-btn {
-    opacity: 0.9;  /* Hover effect */
+    opacity: 0.9;  
 }
 
-/* Responsive styles */
+
 @media screen and (max-width: 768px) {
     .message-table {
-        width: 100%;  /* Full width for mobile */
-        font-size: 14px;  /* Smaller font size */
+        width: 100%;  
+        font-size: 14px; 
     }
     
     .message-table th, .message-table td {
-        padding: 8px;  /* Adjusted padding */
+        padding: 8px;  
     }
     
     .respond-btn, .pending-btn, .delete-btn {
-        min-width: 80px; /* Reduce button width slightly for smaller screens */
-        padding: 6px 12px;  /* Adjust padding */
+        min-width: 80px; 
+        padding: 6px 12px; 
     }
 }
 
 @media screen and (max-width: 480px) {
     .message-table {
-        font-size: 12px;  /* Even smaller font size for mobile */
+        font-size: 12px;  
     }
 
     .respond-btn, .pending-btn, .delete-btn {
-        font-size: 12px;  /* Smaller button font size */
-        padding: 5px 10px;  /* Smaller button padding */
+        font-size: 12px;  
+        padding: 5px 10px;  
     }
 
     .title-center {
-        font-size: 20px;  /* Smaller heading font for mobile */
+        font-size: 20px;  
     }
 }
 </style>

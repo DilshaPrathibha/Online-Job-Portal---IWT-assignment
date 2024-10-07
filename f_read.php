@@ -2,11 +2,13 @@
 
 /* read by admin */
 require 'c_config.php';
+include('navbar.php');
+
 
 $sql = "SELECT id, name, email, type, rating, message, time FROM feedback";
 $result = $conn->query($sql);
 
-echo "<h1 class='title-center'>Feedback Management</h1>";  // Centered heading with CSS class
+echo "<h1 class='title-center'>Feedbacks</h1>";  // Centered heading with CSS class
 
 if ($result->num_rows > 0) {
 
@@ -44,6 +46,9 @@ $conn->close();
 
 <!-- CSS Styling -->
 <style>
+    body{
+        margin-top: 90px;
+    }
     /* Style for centering the title */
 .title-center {
     text-align: center;
@@ -101,3 +106,7 @@ $conn->close();
     }
 }
 </style>
+
+<?php
+    include('footer.php');
+?>

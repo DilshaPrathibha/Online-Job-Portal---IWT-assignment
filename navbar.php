@@ -130,10 +130,10 @@ nav .menu{
                     <span></span>
                 </div>
                 <ul>
-                    <li><a href="../home/home.php">Home</a></li>
+                    <li><a href="home.phhp">Home</a></li>
                     <li><a href="../Bupathifnl/aboutus.php">AboutUs</a></li>
-                    <li><a href="../Dilsha/contact.php">ContactUs</a></li>
-                    <li><a href="../Dilsha/find.php">FindAJob</a></li>
+                    <li><a href="contact.php">ContactUs</a></li>
+                    <li><a href="find.php">FindAJob</a></li>
                     <li><a href="../Malith/postajob.php">PostAJob</a></li>
                     <li><a href="../Shamal/index.php">Internship</a></li>
                     <li><a href="../Shamal/user account page.php">Dashboard</a></li>

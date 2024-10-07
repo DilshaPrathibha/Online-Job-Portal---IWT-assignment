@@ -3,13 +3,11 @@
 include('c_config.php');
 include('navbar.php');
 
-// Initialize search variables
 $search_keyword = "";
 $search_location = "";
 $search_job_type = "";
-$workFromHome = false;  // New variable for work-from-home filter
+$workFromHome = false;  
 
-// Handle search form submission
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $search_keyword = $_POST['keyword'] ?? "";
     $search_location = $_POST['location'] ?? "";

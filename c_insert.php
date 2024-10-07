@@ -1,6 +1,7 @@
 <?php
 require 'c_config.php';
 
+
 /* getting from contact.php */
 $c_name = $_POST["cname"];
 $c_email = $_POST["cemail"];

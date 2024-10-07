@@ -9,7 +9,7 @@ $message = $_POST["cmessage"];
 
 if (empty($name) || empty($email) || empty($phone) || empty($message)) {
 
-    header("Location: c_read.php?status=incompleteupdate");
+    header("Location: contact_update.php?status=incompleteupdate");
     exit();
 } else {
     $sql = "UPDATE contact_us SET name='$name', email='$email', phone='$phone', message='$message' WHERE m_id='$ID'";
