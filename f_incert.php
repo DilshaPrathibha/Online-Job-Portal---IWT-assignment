@@ -14,7 +14,7 @@ $datetime = date("Y-m-d H:i:s");
 $sql = "INSERT INTO feedback VALUES ('','$f_name', '$f_email', '$f_type', '$f_rating', '$f_message', '$datetime')";
 
 if ($conn->query($sql)) {
-    header("Location: index.php"); // to index.php
+    header("Location: find.php"); 
     exit(); 
 
 } else {

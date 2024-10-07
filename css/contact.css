@@ -16,7 +16,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 20px;
+    
 }
 
 .contactImg {
@@ -157,6 +158,7 @@ iframe {
 
     .title{
         font-size: 1.6rem; 
+        margin-top: 100px;
     }
 
 }

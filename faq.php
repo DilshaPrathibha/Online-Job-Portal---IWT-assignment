@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php
+    include('navbar.php');
+    ?>
+    
+    <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,12 +12,13 @@
 
     <style>
         .faq {
-            max-width: 75rem;
+            max-width: 60rem;
             margin: 60px auto;
             font-family: Arial, sans-serif;
         }
 
         .faq h2 {
+            padding-top: 30px;
             text-align: center;
             margin-top: 80px;
             margin-bottom: 20px;
@@ -214,3 +219,7 @@
 </body>
 
 </html>
+
+<?php
+    include('footer.php');
+?>

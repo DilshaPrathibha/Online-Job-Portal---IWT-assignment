@@ -1,3 +1,7 @@
+<?php
+    include('navbar.php');
+    ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,13 +21,14 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
+            
         }
 
         .container {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            
         }
 
         .feedback-form {
@@ -165,3 +170,7 @@
 </body>
 
 </html>
+
+<?php
+    include('footer.php');
+?>
