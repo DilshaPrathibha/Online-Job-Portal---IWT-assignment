@@ -23,7 +23,7 @@
         </div>
         <div class="contactForum">
             
-                <dev><b>Contact Us...</b></dev>
+                <div><b>Contact Us...</b></div>
                 <form class="contactForm" method="post" action="c_insert.php">
                     <input type="text" name="cname" placeholder="Name" required> <br>
                     <input type="email" name="cemail" placeholder="Email" required> <br>

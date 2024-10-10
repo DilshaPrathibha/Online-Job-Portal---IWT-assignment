@@ -14,11 +14,14 @@ $datetime = date("Y-m-d H:i:s");
 $sql = "INSERT INTO feedback VALUES ('','$f_name', '$f_email', '$f_type', '$f_rating', '$f_message', '$datetime')";
 
 if ($conn->query($sql)) {
-    header("Location: ../home/home.php"); 
+    echo "<script>
+            alert('Thank you for your feedback!');
+            window.location.href = '../home/home.php';
+          </script>";
     exit(); 
-
 } else {
-    echo "Error" . $conn->error;  
+    echo "Error: " . $conn->error;  
 }
 
-$conn->close(); 
+$conn->close();
+?>

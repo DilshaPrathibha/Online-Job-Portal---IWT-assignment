@@ -215,7 +215,7 @@
                             <li><a href="../Malith/postajob.php">Post a Job</a></li>
                             <li><a href="../Dilsha/find.php">Find a Job</a></li>
                             <li><a href="../Shamal/index.php">Intership</a></li>
-                            <li><a href="../dilsha/c_read.php">User Feedbacks</a></li>
+                            <li><a href="../dilsha/f_read.php">User Feedbacks</a></li>
                             <li><a href="../dilsha/c_update_admin.php">Manage Messages</a></li>
                         </ul>
                 </div>

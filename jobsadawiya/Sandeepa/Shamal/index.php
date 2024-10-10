@@ -57,7 +57,7 @@
             <input type="text" name="gpa" id="gpa"><br>
 
             <label>4. If we decide to hire you, how soon can you join? </label>
-            <textarea name="hire" name="hire"  id="hire" > </textarea><br>
+            <textarea type="text" name="hire"  id="hire" > </textarea><br>
 
             <label>5. Do you have your own laptop? If you were chosen are
                 you able to bring that to work daily?</label>

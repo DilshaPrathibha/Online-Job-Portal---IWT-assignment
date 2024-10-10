@@ -18,4 +18,4 @@ if ($conn->query($sql)) {
     echo "Error" . $conn->error;
 }
 
-$conn->close(); // close conn
+$conn->close(); 

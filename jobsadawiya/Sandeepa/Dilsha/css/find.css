@@ -9,14 +9,13 @@ body {
     background-color: #f0f0f0;
 }
 
-/* Main Container */
+
 main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Search Bar Container */
 .search-bar-container {
     /*
     position: fixed;
@@ -27,8 +26,8 @@ main {
     z-index: 1000;
 */
 
-    margin-top: 75px;
-     
+    /*margin-top: 20px;*/
+ 
 
     background-color: white;
     border-radius: 20px;
@@ -82,8 +81,6 @@ main {
 
 .filters {
 
-
-
     width: 25%;
     padding: 20px;
     background-color: white;
@@ -127,7 +124,6 @@ main {
     
 }
 
-/* Job Results Section */
 .job-results {
     width: 70%;
 }
@@ -178,7 +174,6 @@ main {
     border-radius: 10px;
 }
 
-/* Layout for Main Content */
 .content {
     display: flex;
     justify-content: space-between;
@@ -186,30 +181,19 @@ main {
 
 .apply-btn {
     background-color: #3498db;
-    /* Blue background */
     color: white;
-    /* White text */
     padding: 10px 15px;
-    /* Padding for the button */
     border: none;
-    /* No border */
     border-radius: 5px;
-    /* Rounded corners */
     cursor: pointer;
-    /* Pointer cursor on hover */
     font-size: 16px;
-    /* Font size */
     margin-top: 10px;
-    /* Space above the button */
-    transition: background-color 0.3s ease;
-    /* Smooth transition on hover */
+    transition: background-color 0.3s ease; /* for smooth transaction */
 }
 
 .apply-btn:hover {
     background-color: #1477b9;
-    /* Darker blue on hover */
 }
-
 
 /* Responsive*/
 @media (max-width: 800px) {
@@ -259,7 +243,6 @@ main {
         margin-right: 20px;
         position: fixed;
         top: 200px;
-        /* Adjust this value to place below the search bar */
         right: 20px;
         /* Distance from the right edge */
        
@@ -340,15 +323,10 @@ main {
 }
 
 
-
-
 .footer-fixed {
     position: absolute;
     bottom: 0;
 }
-
-
-
 
 .navbar {
     position: fixed;
@@ -360,22 +338,20 @@ main {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-/* Make the filters sticky and place akways below the navbar */
 .filters {
     position: -webkit-sticky;
     position: sticky;
     top: 70px; 
-    max-height: calc(100vh - 70px);  /* Adjust based on the navbar height */
+    max-height: calc(100vh - 70px); 
     overflow-y: auto;
-    z-index: 1;  /* Lower than the navbar */
-    max-height: 80vh; /* Prevents it from going out of the viewport */
+    z-index: 1;  
+    max-height: 80vh; 
 }
 
-/* Filters stop scrolling and stick at the footer */
 .footer-fixed {
     position: absolute;
     bottom: 0;
-    z-index: 1;  /* Lower than the navbar */
+    z-index: 1;  
 }
 
 

@@ -233,7 +233,7 @@
                 <li><a href="http://localhost/jobsadawiya/Sandeepa/createUserProfile/read.php">User Profiles</a></li>
                 <li><a href="http://localhost/jobsadawiya/Sandeepa/Malith/read.php">Post Jobs</a></li>
                 <li><a href="http://localhost/jobsadawiya/Sandeepa/Bupathifnl/read.php">Paments</a></li>
-                <li><a href="http://localhost/jobsadawiya/Sandeepa/Dilsha/c_read.php">Contacts</a></li>
+                <li><a href="http://localhost/jobsadawiya/Sandeepa/Dilsha/c_update_admin.php">Contacts</a></li>
                 <li><a href="http://localhost/jobsadawiya/Sandeepa/Shamal/read.php">Interns</a></li>
                 
             </ul>
@@ -342,7 +342,7 @@
                             <li><a href="../Malith/postajob.php">Post a Job</a></li>
                             <li><a href="../Dilsha/find.php">Find a Job</a></li>
                             <li><a href="../Shamal/index.php">Intership</a></li>
-                            <li><a href="../dilsha/c_read.php">User Feedbacks</a></li>
+                            <li><a href="../dilsha/f_read.php">User Feedbacks</a></li>
                             <li><a href="../dilsha/c_update_admin.php">Manage Messages</a></li>
                         </ul>
                     </div>
