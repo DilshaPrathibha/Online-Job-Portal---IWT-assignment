@@ -25,9 +25,9 @@
                         <li><a href="../Dilsha/find.php">FindAJob</a></li>
                         <li><a href="../Malith/postajob.php">PostAJob</a></li>
                         <li><a href="../Shamal/index.php">Internship</a></li>
-                        <li><a href="../Shamal/user account page.php">Dashboard</a></li>
+                        <li><a href="../adminDashboard/index.php">Dashboard</a></li>
                         <li><a href="../Bupathifnl/signup.php">SignUp</a></li>
-                        <li><a href="../Shamal/Login.php">Login</a></li>
+                        <!--<li><a href="../Shamal/Login.php">Login</a></li>-->
                         <li><a href="../createUserProfile/create profile.php">CreateUserProfile</a></li>
                     </ul>
                 </div>

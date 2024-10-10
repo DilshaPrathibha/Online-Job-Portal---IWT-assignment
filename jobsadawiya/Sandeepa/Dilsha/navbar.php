@@ -140,7 +140,7 @@ nav .menu{
                     <li><a href="../Shamal/index.php">Internship</a></li>  
                     <li><a href="../Shamal/login.php">Dashboard</a></li>
                     <li><a href="../Bupathifnl/signup.php">SignUp</a></li>
-                    <li><a href="../Shamal/Login.php">Login</a></li>
+                    <!--<li><a href="../Shamal/Login.php">Login</a></li>-->
                     <li><a href="../createUserProfile/create profile.php">CreateUserProfile</a></li>
                 </ul>
             </div>
