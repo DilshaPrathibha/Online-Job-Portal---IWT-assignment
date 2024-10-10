@@ -15,6 +15,6 @@ if (isset($_POST["cid"])) {
         echo "Error updating record: " . $conn->error;
     }
 }
-
+ 
 $conn->close(); // Close the connection
 ?>

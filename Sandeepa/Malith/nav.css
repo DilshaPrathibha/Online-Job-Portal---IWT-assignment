@@ -1,0 +1,147 @@
+/*Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    
+}
+
+nav {
+    
+    background: #1b1b1b; /* set nav bar background color */
+    width: 100%; /* set width */
+    z-index: 12;
+}
+
+nav .menu {
+    max-width: 1250px; /* list max-width */
+    margin: auto;
+    display: flex; /* topic left side and list items right side */
+    align-items: center; /* list items get centered */
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.menu .logo a {
+    text-decoration: none; /* hide topic link */
+    color: #fff; /* change topic font color */
+    font-size: 30px; /* increase font size */
+    font-weight: 600; /* more bold */
+}
+
+.menu ul {
+    display: inline-flex; /* list items get into a line */
+    float: right;
+}
+
+.menu ul li {
+    list-style: none; /* hide ul circle */
+    margin-left: 7px; /* set left margin */
+}
+
+.menu ul li a {
+    text-decoration: none; /* hide list items link */
+    color: #fff; /* change list items font color */
+    font-weight: 500; /* make it bolder */
+    padding: 8px 15px; /* top and bottom 8, left and right 15 */
+    border-radius: 5px;
+    transition: all 0.3s ease; /* set transition timing to 0.3 seconds */
+}
+
+.menu ul li a:hover {
+    background: #fff; /* background color when hovered */
+    color: #000;
+}
+
+/* Footer */
+.footer-bar {
+    background-color: #24262b; /* set footer background color */
+    padding: 70px 0;
+}
+
+.footer-bar .container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.footer-bar .container .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize; /* automatically convert the first letter into uppercase */
+    font-weight: 500;
+    margin-bottom: 30px;
+    position: relative; /* position relative to its normal flow */
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: rgb(77, 132, 191);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #fff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 10px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px; /* all set same line */
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #fff;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #fff;
+    font-weight: 300;
+}

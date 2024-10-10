@@ -1,0 +1,168 @@
+/*Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+.header{
+    background-image: url(images/header.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover; /*image set perfect*/
+    background-position: center; /*image set center*/
+}
+
+.intro p{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 300px;
+    font-size: 50px;
+    color: #fff;
+    margin: 0 100px;
+    text-shadow: rgba(0, 0, 0, 0.5);
+}
+
+.about{
+    padding: 80px 0; /*top and bottom 80, left and right 0*/
+    color: #ababab;
+    background-color: black;
+}
+
+.row{
+    display: flex; /*take image left side and para into right side*/
+    justify-content: space-between;
+    margin: auto;
+    /*flex-wrap: wrap;*/
+}
+
+.about .col1{
+    flex-basis: 60%;
+}
+
+.about .col1 img{
+    width: 700px;
+    border-radius: 15px;
+    /*margin-right: 30px;*/
+}
+
+.about .col1 p{
+    margin-right: 60px;
+    color: #ababab;
+}
+
+.col1 .btn1, 
+.col1 .btn2{
+    display: inline;
+    margin: 30px 10px;
+    width: fit-content;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.col1 .btn1{
+    border: 1px solid #42b72a;
+}
+
+
+.col1 .btn2{
+    border: 1px solid #1877f2;
+}
+
+.btn1:hover{
+    background: #3ba626;
+}
+
+.btn2:hover{
+    background: #0d65d9;
+}
+    
+.jobs .title h3{
+    margin: 2px 10px;
+    padding: 50px 0;
+    font-size: 25px;
+}
+
+.jobs .job-list button{
+    width: 15%;
+    height: 10vh;
+    margin: 5px 10px;
+    border-radius: 7px;
+}
+
+.more button{
+    font-size: 20px;
+    padding: 5px 5px 5px 5px;
+    margin: 50px 700px;
+    /*display: inline;*/
+    width: 100px;
+    border-radius: 6px;
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    transition: background 0.5s;
+
+}
+
+.more button:hover{
+    background: #000;
+    color: #fff;
+}
+
+.post{
+    padding: 80px 0; /*top and bottom 80, left and right 0*/
+    color: #ababab;
+    background-color: black;
+}
+
+.post .col1{
+    flex-basis: 60%;
+}
+
+.post .col1 img{
+    width: 700px;
+    border-radius: 15px;
+}
+
+.post .col1 p{
+    margin-right: 60px;
+    color: #ababab;
+}
+
+.post .col1 button{
+    border: 1px solid#ff004f;
+    display: inline;
+    margin: 30px 10px;
+    width: fit-content;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.post .col1 button:hover{
+    background: #ff004f;
+}
+
+.question .container{
+    background-color: #ababab;
+    width: 100%;
+    height: fit-content;
+    padding: 50px;
+}
+
+.para{
+    align-items: center;
+    text-align: center;
+}
+

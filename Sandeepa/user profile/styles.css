@@ -1,0 +1,107 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Section */
+.profile {
+    align-items: center;
+    gap: 50px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+}
+
+/* Profile picture Section */
+.propic {
+    position: relative;
+    font-size: 70px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* profile name */
+
+.profile-name {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.profile-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-left:50px;
+}
+
+.form-group {
+    width: 45%;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px 8px 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Details Section */
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.skills, .education, .work-experience {
+    width: 45%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat-box {
+    background-color: white;
+    width: 30%;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}

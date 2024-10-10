@@ -1,0 +1,315 @@
+/*Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 70vh; /* Allows content to grow beyond viewport */
+    background: linear-gradient(135deg, #fff, #fff);
+    /*background-color: #1b1b1b;*/
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 20px;/*Google Fonts - Poppins */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    
+    /** {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }*/
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+   
+    .container{
+        max-width: 800px;
+        width: 100%;
+        margin-top: 200px;
+    }
+    
+    /*.avatar_part {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .avatar_head {
+        margin-top: 20px;
+        margin-left: 10px;
+        padding-top: 20px;
+    }
+    
+    .avatar {
+        width: 80px;
+        height: 80px;
+        background-color: #fff;
+        border-radius: 50%;
+        border: 1px solid #000;
+        margin-right: 20px;
+    }
+    
+    .avatar_buttons button {
+        margin-bottom: 5px;
+        padding: 5px 10px;
+        border: 1px solid #000;
+        background-color: #fff;
+        cursor: pointer;
+    }*/
+    
+    .general_info {
+        margin-bottom: 20px;
+        max-width: 700px;
+        width: 100%;
+        background: #fff;
+        padding: 25px 30px;
+        border-radius: 5px;
+        border: 1px solid #000;
+    }
+    
+    .general_info .title {
+        font-size: 25px;
+        font-weight: 500;
+        position: relative;
+    }
+    
+    .general_info .title::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 30px;
+        background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    }
+    
+    .general_info  .user-details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px 0 12px 0;
+    }
+    
+     .user-details .input_part {
+        margin-bottom: 15px;
+        width: calc(100%/2 - 20px);
+    
+    }
+    
+    .user-details .input-part .details {
+        display: block;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    
+    input {
+        height: 45px;
+        width: 100%;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding-left: 15px;
+        font-size: 16px;
+        border-bottom-width: 2px;
+        transition: all 0.3s ease;
+    }
+    
+    .input-part, textarea {
+        height: 100px;
+        width: 100%;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding-left: 15px;
+        font-size: 16px;
+        border-bottom-width: 2px;
+        transition: all 0.3s ease;
+    }
+    
+    .full-width{
+        width: 100%;
+    }
+    
+    .about, .work, .education, .skills {
+        max-width: 700px;
+        width: 100%;
+        background: #fff;
+        padding: 25px 30px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        border: 1px solid #000;
+    }
+    
+    .work  .user-details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px 0 12px 0;
+    }
+    
+    #post, #cancel, #save {
+        margin-bottom: 5px;
+        padding: 5px 10px;
+        border: 1px solid #000;
+        background-color: #fff;
+        cursor: pointer;
+    }
+    
+    input[type="checkbox"] {
+        width: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+
+/*
+.container{
+    max-width: 800px;
+    width: 100%;
+    margin-top: 200px;
+}
+
+.avatar_part {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.avatar_head {
+    margin-top: 20px;
+    margin-left: 10px;
+    padding-top: 20px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #000;
+    margin-right: 20px;
+}
+
+.avatar_buttons button {
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.general_info {
+    margin-bottom: 20px;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.general_info .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.general_info .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.general_info  .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+ .user-details .input_part {
+    margin-bottom: 15px;
+    width: calc(100%/2 - 20px);
+}
+
+.user-details .input-part .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.input-part, textarea {
+    height: 100px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.full-width{
+    width: 100%;
+}
+
+.about, .work, .education, .skills {
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.work  .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+#post, #cancel, #save {
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    justify-content: center;
+    align-items: center;
+}
+*/

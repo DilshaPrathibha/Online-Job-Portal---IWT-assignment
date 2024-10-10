@@ -1,0 +1,259 @@
+/*Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+.notify-bar .container{
+    background-color: #000;
+}
+
+.container{
+    max-width: 1500px; 
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*notification bar css*/
+
+.header {
+    display: flex; /*get inline*/
+    justify-content: space-between; /*make space between job managment and notifications*/
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #1b1b1b;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.header span{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+#profile {
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    background-color: #000;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/*percentage circle*/
+
+.chart .container{
+    display: flex;
+    
+}
+
+.box{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);*/
+}
+
+.box .percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.box .percent svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.box .percent svg circle{
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+}
+
+.box .percent svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+
+.box .percent svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 36)/100);
+    stroke: #FBF603;
+}
+
+.box .percent .c2 circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 20)/100);
+    stroke: #F3A118;
+}
+
+.box .percent .c3 circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 30)/100);
+    stroke: #95C923;
+}
+
+.box .percent .c4 circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 14)/100);
+    stroke: #F52203;
+}
+
+.box .percent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+}
+
+.box .percent .number h2{
+    font-size: 40px;
+}
+
+.box .percent .number h2 span{
+    font-size: 30px;
+}
+
+.box .text{
+    padding: 10px 0 0;
+    color: #999;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/*button css*/
+
+.buttons .btn2,
+.buttons .btn1{
+    padding: 15px 20px;
+    width: 100%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 20px;
+}
+
+.buttons .btn1{
+    background-color: #F6BDCB;
+}
+
+.buttons .btn2{
+    background-color: #6AD9F3;
+}
+
+.table{
+    display: flex;
+}
+
+.table table{
+    width: 70%;
+    margin: 25px 0;
+    border-collapse: collapse;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden; /*right left bottom lines hidden*/
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+table thead tr{
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+table thead th{
+    padding: 12px 15px;
+}
+
+table tbody td{
+    padding: 12px 15px;
+}
+
+table tbody tr{
+    border-bottom: 1px solid #dddddd; /*all rows grey*/
+}
+
+table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type{
+    border-bottom: 2px solid #009879;
+}
+
+.social a{
+    text-decoration: none;
+    
+}
+
+.social button{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60px;
+    padding: 8px 10px;
+    margin: 10px 70px;
+    align-items: center;
+    border: none;
+    border-radius: 6px;
+    justify-content: center; /*text comes middle in the box*/
+}
+
+#facebook{
+    background-color: #0866FF;
+    color: #dddddd;
+}
+
+#linkdin:hover,
+#facebook:hover,
+#twitter:hover,
+#google:hover{
+    background-color: #000;
+    color: #fff;
+    transition: all 0.3 ease;
+}
+
+
+#linkdin{
+    background-color: #0A66C2;
+    color: #dddddd;
+}
+
+#twitter{
+    background-color: #1DA1F2;
+    color: #dddddd;
+}
+
+#google{
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+#google,
+#linkdin,
+#twitter,
+#facebook{
+    transition-delay: .1ms;
+}
