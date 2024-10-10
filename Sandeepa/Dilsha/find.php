@@ -77,9 +77,9 @@ if ($result->num_rows > 0) {
             </form>
         </div>
 
-        <!-- Main Content -->
+        
         <div class="content">
-            <!-- Filters Section -->
+            
             <aside class="filters">
                 <form method="POST" action="find.php">
                     <select name="employment_type">
@@ -109,7 +109,7 @@ if ($result->num_rows > 0) {
                 </form>
             </aside>
 
-            <!-- Job Results Section -->
+            
             <section class="job-results">
                 <p class="jobs_count">
                     <?php
@@ -119,11 +119,11 @@ if ($result->num_rows > 0) {
                 </p>
 
                 <div class="job-listings" id="job-listings">
-                    <!-- Job cards will be injected here by JavaScript -->
+                    <!-- using js -->
                 </div>
 
                 <div class="pagination" id="pagination">
-                    <!-- Pagination buttons will be injected here by JavaScript -->
+                    <!-- js using for Pagination  -->
                 </div>
             </section>
         </div>
@@ -190,7 +190,6 @@ if ($result->num_rows > 0) {
     const applyJob = (jobTitle) => {
         alert(`Applied successfully for : ${jobTitle}`);
 
-        // Redirect or handle apply logic
         // window.location.href = `/apply?jobTitle=${encodeURIComponent(jobTitle)}`;
     };
 

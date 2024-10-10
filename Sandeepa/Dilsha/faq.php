@@ -135,9 +135,9 @@
                 <br>
                 <p>To create an account:</p>
                 <ol>
-                    <li>Click on the <b>"Sign Up"</b> button on the homepage.</li>
-                    <li>Fill in your details.</li>
-                    <li>Verify your email address.</li>
+                    <li>&nbsp;Click on the <b>"Sign Up"</b> button on the homepage.</li>
+                    <li>&nbsp;Fill in your details.</li>
+                    <li>&nbsp;Verify your email address.</li><br>
                 </ol>
 
             </div>
