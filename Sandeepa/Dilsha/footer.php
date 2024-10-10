@@ -113,6 +113,7 @@
                     <ul>
                         <li><a href="faq.php">FAQ</a></li>
                         <li><a href="contact.php">Contact Us</a></li>
+                        <li><a href="feedback.php">Feedback</a></li>
                         <li><a href="../Malith/package.php">payment options</a></li>
                         <li><a href="#">www.JobsAdawiya@gmail.com</a></li>
                     </ul>

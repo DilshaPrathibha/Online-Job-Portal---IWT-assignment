@@ -124,7 +124,7 @@ main {
 
 .search-btn:hover {
     background-color: #1477b9;
-    /* Darker blue on hover */
+    
 }
 
 /* Job Results Section */
@@ -326,7 +326,7 @@ main {
     }
 }
 
-/* For tablets and small laptops */
+
 @media (max-width: 1200px) {
     .filters {
         width: 100%;
@@ -341,14 +341,6 @@ main {
 
 
 
-/* stop scrolling filters on the footer */
-.filters {
-    
-    position: sticky;
-    
-    max-height: 80vh; /* Prevents it from going out of the viewport */
-    
-}
 
 .footer-fixed {
     position: absolute;
@@ -358,26 +350,25 @@ main {
 
 
 
-
-/* Set the navbar at the top with a high z-index */
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 9999;  /* Very high to stay in front of all elements */
-    background-color: #fff; /* Ensure the navbar has a background to hide content behind it */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for a clearer separation */
+    z-index: 9999; 
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-/* Make the filters sticky and ensure it is below the navbar */
+/* Make the filters sticky and place akways below the navbar */
 .filters {
     position: -webkit-sticky;
     position: sticky;
-    top: 70px;  /* Adjust this value to match the height of your navbar */
+    top: 70px; 
     max-height: calc(100vh - 70px);  /* Adjust based on the navbar height */
     overflow-y: auto;
     z-index: 1;  /* Lower than the navbar */
+    max-height: 80vh; /* Prevents it from going out of the viewport */
 }
 
 /* Filters stop scrolling and stick at the footer */

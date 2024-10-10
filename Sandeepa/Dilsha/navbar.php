@@ -1,4 +1,6 @@
 <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -122,7 +124,7 @@ nav .menu{
         <nav>
             <div class="menu">
                 <div class="logo">
-                    <a href="#">Jobs අඩවිය</a>
+                    <a href="../home">Jobs අඩවිය</a>
                 </div>
                 <div class="hamburger">
                     <span></span>
@@ -130,13 +132,13 @@ nav .menu{
                     <span></span>
                 </div>
                 <ul>
-                    <li><a href="home.phhp">Home</a></li>
+                    <li><a href="../home/home.php">Home</a></li>
                     <li><a href="../Bupathifnl/aboutus.php">AboutUs</a></li>
                     <li><a href="contact.php">ContactUs</a></li>
                     <li><a href="find.php">FindAJob</a></li>
                     <li><a href="../Malith/postajob.php">PostAJob</a></li>
-                    <li><a href="../Shamal/index.php">Internship</a></li>
-                    <li><a href="../Shamal/user account page.php">Dashboard</a></li>
+                    <li><a href="../Shamal/index.php">Internship</a></li>  
+                    <li><a href="../Shamal/login.php">Dashboard</a></li>
                     <li><a href="../Bupathifnl/signup.php">SignUp</a></li>
                     <li><a href="../Shamal/Login.php">Login</a></li>
                     <li><a href="../createUserProfile/create profile.php">CreateUserProfile</a></li>

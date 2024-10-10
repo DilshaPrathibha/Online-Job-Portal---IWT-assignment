@@ -2,7 +2,6 @@
 require 'c_config.php';
 include('navbar.php');
 
-// status query parameters to show a message
 if (isset($_GET['status'])) {
     if ($_GET['status'] == 'deleteerror') {
         echo "<script>alert('Error deleting message. Please try again.');</script>";
@@ -132,3 +131,8 @@ $conn->close();
         opacity: 0.9;
     }
 </style>
+
+
+<?php
+    include('footer.php');
+?>

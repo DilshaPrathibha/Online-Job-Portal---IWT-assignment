@@ -56,12 +56,13 @@ if ($result->num_rows > 0) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find a Job</title>
+    <link rel="icon" href="/images/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/find.css">
 </head>
 
-<body>
+<body style="padding-top:100px">
 
-    <!-- Search Bar Section -->
+   
     <main>
         <div class="search-bar-container">
             <form method="POST" action="find.php">
@@ -193,13 +194,11 @@ if ($result->num_rows > 0) {
         // window.location.href = `/apply?jobTitle=${encodeURIComponent(jobTitle)}`;
     };
 
-    // Initial load
+
     displayJobs(currentPage);
     displayPagination();
 
 
-
-/* stop scrolling filters on the footer */
     window.addEventListener('scroll', () => {
     const filters = document.querySelector('.filters');
     const footer = document.querySelector('footer');
@@ -208,12 +207,14 @@ if ($result->num_rows > 0) {
     const footerTop = footer.getBoundingClientRect().top;
     const windowHeight = window.innerHeight;
 
-    // Check if filters should stop being sticky and scroll with the footer
+        /*
     if (footerTop < windowHeight) {
         filters.classList.add('footer-fixed');
     } else {
         filters.classList.remove('footer-fixed');
     }
+
+    */
 });
 
 </script>

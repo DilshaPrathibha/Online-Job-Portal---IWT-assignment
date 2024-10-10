@@ -1,6 +1,6 @@
 <?php
-// jobportal - DB name
-$conn = new mysqli("localhost", "root", "", "jobportal");
+
+$conn = new mysqli("localhost", "root", "", "jobadawiya");
 
 if($conn -> connect_error)
 {

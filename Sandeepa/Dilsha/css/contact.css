@@ -107,8 +107,9 @@ iframe {
 }
 
 .title {
+    padding-top: 80px;
     text-align: center; 
-    margin: 40px 0;
+   
     color: #333;
     font-family: 'Arial', sans-serif; 
     font-weight: bold;
@@ -144,6 +145,8 @@ iframe {
     .title{
         font-size: 1.1rem; 
     }
+
+   
 }
 
 @media (min-width: 800px) {

@@ -11,7 +11,7 @@ if (isset($_GET['status'])) {
     } 
 }
 
-echo "<h1 class='title-center'>Message Management</h1>";  
+echo "<h1 class='title-center'> <br> Message Management</h1>";  
 
 if ($result->num_rows > 0) {
     echo "<table class='message-table'>";  
@@ -67,14 +67,10 @@ if ($result->num_rows > 0) {
     echo "<p>No Results</p>";
 }
 
-$conn->close(); // Close the connection
+$conn->close(); 
 ?>
 
 <script>
-    // Confirm marking as responded
-    function confirmresponded() {
-        return confirm("Are you sure you want to mark this message as pending?");
-    }
 
     // Confirm message deletion
     function confirmDelete() {

@@ -8,11 +8,11 @@ include('navbar.php');
 $sql = "SELECT id, name, email, type, rating, message, time FROM feedback";
 $result = $conn->query($sql);
 
-echo "<h1 class='title-center'>Feedbacks</h1>";  // Centered heading with CSS class
+echo " <h1 class='title-center'> <br> Feedbacks</h1>";  
 
 if ($result->num_rows > 0) {
 
-    echo "<table class='message-table'>";   // Apply CSS class
+    echo "<table class='message-table'>";   
 
     echo "<thead><tr>" . 
     "<th> Feedback ID </th>" .
@@ -44,12 +44,11 @@ if ($result->num_rows > 0) {
 $conn->close();
 ?>
 
-<!-- CSS Styling -->
 <style>
     body{
         margin-top: 90px;
     }
-    /* Style for centering the title */
+   
 .title-center {
     text-align: center;
     font-size: 24px;
@@ -57,10 +56,10 @@ $conn->close();
     color: #333;
 }
 
-/* Style for the table */
+
 .message-table {
-    width: 80%; /* Reduce the width of the table */
-    margin: 20px auto; /* Center the table */
+    width: 80%; 
+    margin: 20px auto; 
     border-collapse: collapse;
     font-size: 16px;
     text-align: left;
@@ -71,7 +70,7 @@ $conn->close();
 }
 
 .message-table th, .message-table td {
-    padding: 10px 12px; /* Reduced padding */
+    padding: 10px 12px; 
     border: 1px solid #ddd;
 }
 
@@ -87,22 +86,22 @@ $conn->close();
 /* Responsive styles */
 @media screen and (max-width: 768px) {
     .message-table {
-        width: 100%;  /* Full width for mobile */
-        font-size: 14px;  /* Smaller font size */
+        width: 100%;  
+        font-size: 14px; 
     }
     
     .message-table th, .message-table td {
-        padding: 8px;  /* Adjusted padding */
+        padding: 8px;  
     }
 }
 
 @media screen and (max-width: 480px) {
     .message-table {
-        font-size: 12px;  /* Even smaller font size for mobile */
+        font-size: 12px;  
     }
 
     .title-center {
-        font-size: 20px;  /* Smaller heading font for mobile */
+        font-size: 20px;  
     }
 }
 </style>

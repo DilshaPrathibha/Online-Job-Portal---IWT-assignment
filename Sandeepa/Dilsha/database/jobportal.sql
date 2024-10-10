@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 06, 2024 at 07:45 PM
+-- Generation Time: Oct 07, 2024 at 02:58 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -40,9 +40,10 @@ CREATE TABLE `company` (
 --
 
 INSERT INTO `company` (`cName`, `Employe`, `cLocation`, `About`, `Email`) VALUES
-('ABC Group', 150, 'Colombo', 'we are sa h kj sacsc', 'contact@abc.com'),
-('f', 33, 'xxxxxxx', 'xxxx', 'aa@gmail.com'),
-('xxxxxxx', 33, 'xxxxxxx', 'xxxxxxx', 'aa@gmail.com');
+('ABC Group', 150, 'Colombo', 'Software company', 'contact@abc.com'),
+('Apex Industries', 300, 'Toronto', 'Manufacturing quality automotive parts', 'connect@apexind.com'),
+('Delta Corp', 500, 'London', 'Innovating financial technology', 'info@deltacorp.com'),
+('XYZ Technologies', 200, 'New York', 'Leading software solutions provider', 'contact@xyztech.com');
 
 -- --------------------------------------------------------
 
@@ -65,11 +66,11 @@ CREATE TABLE `contact_us` (
 --
 
 INSERT INTO `contact_us` (`m_id`, `name`, `email`, `phone`, `message`, `time`, `status`) VALUES
-(73, 'Saman Kumara', 'samankumara@gmail.com', '0778563482', 'I need assistance with updating my profile information.', '2024-10-04 20:31:32', 'responded'),
-(74, 'Emily White', 'emilywhite@outlook.com', '0784582314', 'I am having trouble submitting job applications. The form keeps giving an error.', '2024-10-04 20:22:27', 'pending'),
-(75, 'Aravinda Jayasooriya', 'jayasooriya@gmail.com', '0767824591', 'I received an email regarding my application, but I didn’t understand the next steps.', '2024-10-04 20:31:48', 'responded'),
-(76, 'Dilini Chamodya', 'dchamodya2002@gmail.com', '0727569548', 'The website crashes when I try to upload my resume. Please assist.', '2024-10-04 20:25:51', 'pending'),
-(77, 'Hasantha Madushan', 'hasamadushan12@gmail.com', '0750120365', 'I want to delete my account but can not find the option in my settings.', '2024-10-04 20:29:23', 'pending');
+(73, 'Saman Kumara', 'samankumara@gmail.com', '0778563482', 'I need assistance with updating my profile information.', '2024-10-07 12:28:26', 'pending'),
+(74, 'Emily White', 'emilywhite@outlook.com', '0784582314', 'I am having trouble submitting job applications. The form keeps giving an error.', '2024-10-07 05:51:59', 'responded'),
+(75, 'Aravinda Jayasooriya', 'jayasooriya@gmail.com', '0767824591', 'I received an email regarding my application, but I didn’t understand the next steps.', '2024-10-07 12:28:24', 'pending'),
+(76, 'Dilini Chamodya', 'dchamodya2002@gmail.com', '0727569548', 'The website crashes when I try to upload my resume. Please assist.', '2024-10-07 12:29:22', 'responded'),
+(77, 'Hasantha Madushan', 'hasamadushan12@gmail.com', '0750120365', 'I want to delete my account but can not find the option in my settings.', '2024-10-06 23:46:49', 'pending');
 
 -- --------------------------------------------------------
 
@@ -96,9 +97,7 @@ INSERT INTO `feedback` (`id`, `name`, `email`, `type`, `rating`, `message`, `tim
 (6, 'Mahinda Jayasinghe', 'mahindajayasinghe@yahoo.com', 'bug', 2, ' job search filters kept showing jobs outside the selected categories', '2024-10-04 20:04:59'),
 (8, 'Deepika Kumari', 'deepikakumari1985@gmail.com', 'feature', 3, 'If the platform had a resume builder, it would be easier for job seekers to apply directly', '2024-10-04 20:09:00'),
 (9, 'David Brown', 'davidbrown@gmail.com', 'general', 5, 'Excellent job!', '2024-10-04 20:09:58'),
-(10, 'Kasun Sampath Samarasinghe', 'ksamarasinghe@hotmail.com', 'general', 4, 'Great portal, but loading could be faster.', '2024-10-04 20:14:04'),
-(11, '', '', '', 0, '', '2024-10-05 22:48:11'),
-(12, '', '', '', 0, '', '2024-10-05 22:48:17');
+(10, 'Kasun Sampath Samarasinghe', 'ksamarasinghe@hotmail.com', 'general', 4, 'Great portal, but loading could be faster.', '2024-10-04 20:14:04');
 
 -- --------------------------------------------------------
 
@@ -121,7 +120,9 @@ CREATE TABLE `jobs` (
 
 INSERT INTO `jobs` (`Title`, `jLocation`, `Employmenttype`, `SalaryRange`, `jDescription`, `Skills`) VALUES
 (' Project Manager', 'On-site', 'Full-time', 95000, 'Manage project timelines, resources, and communica', 'Agile, Scrum, Leadership, Communication'),
+('Backend Developer', 'Remote', 'Full-time', 90000, 'Develop and maintain server-side logic for applica', 'Node.js, MongoDB, Express'),
 ('Data Analyst', 'Remote', 'Full-time', 80000, 'Analyze data and generate business insights', 'Python, SQL, Tableau'),
+('Digital Marketer', 'On-site', 'Full-time', 65000, 'Design and implement online marketing campaigns', 'Google Ads, Analytics, SEO'),
 ('End Developer', 'Remote', 'Full-time', 75000, 'Responsible for building the front-end of web appl', 'HTML, CSS, JavaScript, Vue.js'),
 ('Marketing Coordinator', 'On-site', 'Part-time', 40000, 'Coordinate marketing campaigns and social media co', 'SEO, Content Writing, Analytics'),
 ('Software Developer', 'Remote', 'Full-time', 70000, 'Develop and maintain web applications', 'JavaScript, React, Node.js'),
@@ -163,13 +164,13 @@ ALTER TABLE `jobs`
 -- AUTO_INCREMENT for table `contact_us`
 --
 ALTER TABLE `contact_us`
-  MODIFY `m_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=89;
+  MODIFY `m_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=114;
 
 --
 -- AUTO_INCREMENT for table `feedback`
 --
 ALTER TABLE `feedback`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
