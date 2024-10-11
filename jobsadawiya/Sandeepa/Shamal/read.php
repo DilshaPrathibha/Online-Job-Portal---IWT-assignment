@@ -5,15 +5,27 @@
 <body>
     
 
-<a href="http://localhost/jobsadawiya/Sandeepa/home/home.php"><button style="padding:8px 10px; margin: 8px 8px">
-            Back to Home <i class='bx bx-home'></i></button></a>
+<div class="btn" style="display: flex;">
+
+<a href="http://localhost/jobsadawiya/Sandeepa/Shamal/user_account_page.php">
+<button style="margin-right: 5px;">Back</button></a>
+
+<form method="post" action="updateintern.php" >
+<button style="margin-right: 5px; background-color: green;">Update</button>
+</form>
+
+<form method="post" action="deleteintern.php">
+<button style="margin-right: 5px; background-color: red;">Delete</button>
+</form>
+
+</div>         
 
 
 <?php
 require 'config.php'; // Database connection
 
 // Fetch and display job details
-$sqljob = "SELECT Degree, Previous_Experience, GPA, Timescale, Desition, Explanation, Reason_for_intern FROM sdeveloper";
+$sqljob = "SELECT NIC,Degree, Previous_Experience, GPA, Timescale, Desition, Explanation, Reason_for_intern FROM sdeveloper";
 $result_job = $con->query($sqljob);
 
 if ($result_job) { 
@@ -22,7 +34,8 @@ if ($result_job) {
         
         // Add table headers
         echo "<tr>";
-        echo "<th>Degree</th>" .
+        echo"<th>NIC</th>" .
+            "<th>Degree</th>" .
              "<th>Previous_Experience</th>" .
              "<th>GPA</th>" .
              "<th>Timescale</th>" .
@@ -33,7 +46,8 @@ if ($result_job) {
         
         while ($row = $result_job->fetch_assoc()) {
             echo "<tr>";
-            echo "<td>". $row["Degree"] . "</td>" .
+            echo "<td>". $row["NIC"] . "</td>" .
+                 "<td>". $row["Degree"] . "</td>" .
                  "<td>". $row["Previous_Experience"] . "</td>" .
                  "<td>". $row["GPA"] . "</td>" .
                  "<td>". $row["Timescale"] . "</td>" .
@@ -89,13 +103,7 @@ if ($result_company) {
 $con->close();
 ?>
 
-<form method="post" action="updateintern.php">
-    <button>Update</button>
-</form>
 
-<form method="post" action="deleteintern.php">
-    <button>Delete</button>
-</form>
 
 </body>
 </html>

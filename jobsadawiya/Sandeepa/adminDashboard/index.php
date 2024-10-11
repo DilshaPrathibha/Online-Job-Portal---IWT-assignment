@@ -66,7 +66,6 @@
                         <li><a href="../Shamal/index.php">Internship</a></li>
                         <li><a href="../Shamal/Login.php">Dashboard</a></li>
                         <li><a href="../Bupathifnl/signup.php">SignUp</a></li>
-                        <!--<li><a href="../Shamal/Login.php">Login</a></li>-->
                         <li><a href="../createUserProfile/create profile.php">CreateUserProfile</a></li>
                     </ul>
                 </div>
@@ -166,40 +165,40 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>xxx</td>
-                            <td>xxx</td>
-                            <td>xxx</td>
-                            <td>xxx</td>
-                            <td>xxx</td>
+                            <td>Software Engineer</td>
+                            <td>2024-10-03</td>
+                            <td>2024-11-02</td>
+                            <td>2024-10-15</td>
+                            <td>COLOMBO</td>
                         </tr>
                         <tr>
-                            <td>xxx</td>
-                            <td>xxx</td>
-                            <td>xxx</td>
-                            <td>xxx</td>
-                            <td>xxx</td>
+                            <td>Data Analyst</td>
+                            <td>2024-10-01</td>
+                            <td>2024-10-31</td>
+                            <td>2024-10-14</td>
+                            <td>COLOMBO</td>
                         </tr>
                         <tr>
-                            <td>xxx</td>
-                            <td>xxx</td>
-                            <td>xxx</td>
-                            <td>xxx</td>
-                            <td>xxx</td>
+                            <td>Marketing Manager</td>
+                            <td>2024-10-04</td>
+                            <td>2024-11-04</td>
+                            <td>2024-10-13</td>
+                            <td>COLOMBO</td>
                         </tr>
                         <tr>
-                            <td>xxx</td>
-                            <td>xxx</td>
-                            <td>xxx</td>
-                            <td>xxx</td>
-                            <td>xxx</td>
+                            <td>UI/UX Designer</td>
+                            <td>2024-10-02</td>
+                            <td>2024-11-01</td>
+                            <td>2024-10-16</td>
+                            <td>REMOTE</td>
                         </tr>
                     </tbody>
                 </table>
                 <div class="social">
-                    <a href="#"><button id="google"><i class='bx bxl-google'></i>Post to Google</button></a>
-                    <a href="#"><button id="linkdin"><i class='bx bxl-linkedin' ></i>Post to Linkdin</button></a>
-                    <a href="#"><button id="facebook"><i class='bx bxl-facebook-circle' ></i>Post to Facebook</button></a>
-                    <a href="#"><button id="twitter"><i class='bx bxl-twitter' ></i>Post to Twitter</button></a>
+                    <a href="https://www.google.com/"><button id="google"><i class='bx bxl-google'></i>Post to Google</button></a>
+                    <a href="https://lk.linkedin.com/"><button id="linkdin"><i class='bx bxl-linkedin' ></i>Post to Linkdin</button></a>
+                    <a href="https://web.facebook.com/"><button id="facebook"><i class='bx bxl-facebook-circle' ></i>Post to Facebook</button></a>
+                    <a href="https://x.com/"><button id="twitter"><i class='bx bxl-twitter' ></i>Post to Twitter</button></a>
                 </div>
             </div>
         </div>
@@ -231,11 +230,11 @@
                 <div class="footer-col">
                     <h4>Follow Us</h4>
                     <div class="social-links">
-                            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-                            <a href="#"><i class='bx bxl-instagram'></i></a>
-                            <a href="#"><i class='bx bxl-linkedin'></i></a>
-                            <a href="#"><i class='bx bxl-twitter'></i></a>
-                            <a href="#"><i class='bx bxl-youtube'></i></a>
+                            <a href="https://web.facebook.com/"><i class='bx bxl-facebook-circle'></i></a>
+                            <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+                            <a href="https://lk.linkedin.com/"><i class='bx bxl-linkedin'></i></a>
+                            <a href="https://x.com/"><i class='bx bxl-twitter'></i></a>
+                            <a href="https://www.youtube.com/"><i class='bx bxl-youtube'></i></a>
                     </div>  
                 </div>
             </div>

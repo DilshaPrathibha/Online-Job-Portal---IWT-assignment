@@ -1,5 +1,6 @@
 <?php
 require 'config.php'; 
+$nic = $_POST["nic"];
 $degree = $_POST["degree"];
 $project = $_POST["project"];
 $gpa = $_POST["gpa"];
@@ -7,7 +8,7 @@ $hire = $_POST["hire"];
 $lap = $_POST["lap"];
 $permanant = $_POST["permanant"];
 $interest = $_POST["interest"];
-$sql="UPDATE sdeveloper set Degree='$degree',Previous_Experience='$project',GPA='$gpa',Timescale='$hire',Desition='$lap',Explanation='$permanant',Reason_for_intern='$interest' where Degree='$degree'";
+$sql="UPDATE sdeveloper set NIC='$nic',Degree='$degree',Previous_Experience='$project',GPA='$gpa',Timescale='$hire',Desition='$lap',Explanation='$permanant',Reason_for_intern='$interest' where NIC='$nic'";
 if($con->query($sql))
 {
     echo "updated";

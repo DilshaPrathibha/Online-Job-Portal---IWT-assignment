@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create user profile</title>
+    <!--form css-->
     <link rel="stylesheet" href="create profile.css">
+    <!--navbar css-->
     <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
-
 <div class="nav-bar">
         <div class="container">
             <nav>
@@ -25,29 +26,18 @@
                         <li><a href="../Shamal/index.php">Internship</a></li>
                         <li><a href="../Shamal/Login.php">Dashboard</a></li>
                         <li><a href="../Bupathifnl/signup.php">SignUp</a></li>
-                        <!--<li><a href="../Shamal/Login.php">Login</a></li>-->
                         <li><a href="../createUserProfile/create profile.php">CreateUserProfile</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
 </div>
-
 <div class="content"  style="padding-top:0px">
 <form method="post" action="insert.php">
 <div class="container">
-<!--General Information-->
+<!--General Information--> 
     <div class="general_info">
         <div class="title">Create User Profile</div>
-        <!--<form method="post" action="insert.php">-->
-            <!--<div class="avatar_head">Avatar</div>
-            <div class="avatar_part">
-                <div class="avatar"></div>
-                <div class="avatar_buttons">
-                    <button id="change">Change</button>
-                    <button id="remove">Remove</button>
-                </div>
-            </div>-->
             <div class="user-details">
                 <div class="input_part">
                     <span class="details">Full Name</span>
@@ -62,24 +52,18 @@
                     <textarea name="Description1" style="width: 215%;"  rows="4" placeholder="Example Text"></textarea>
                 </div>
             </div>
-        <!--</form>-->
     </div>
-
 <!--About-->
     <div class="about">
         <div class="title">About</div>
-        <!--<form action="insert.php">-->
             <div class="input_part">    
                 <span class="Description">Description</span>
                 <textarea name="Description2" rows="4" placeholder="Example Text"></textarea>
             </div>
-        <!--</form>-->
     </div>    
-
 <!--Working Experience-->    
     <div class="work">
         <div class="title">Working Experience</div>
-        <!--<form method="post" action="insert.php">-->
             <div class="user-details">
                 <div class="input_part">
                     <span class="details">Company Name</span>
@@ -103,12 +87,10 @@
                 </div>
                 <div class="full-width">    
                     <span class="Description">Description</span>
-                    <textarea name="Description1" style="width: 100%;"  rows="4" placeholder="Example Text"></textarea>
+                    <textarea name="Description3" style="width: 100%;"  rows="4" placeholder="Example Text"></textarea>
                 </div>
-            </div>
-            
+            </div>          
     </div>
-
 <!--Education-->
 <div class="education">
     <div class="title">Education</div>
@@ -116,10 +98,8 @@
         <div class="input_part">    
             <span class="Description">Description</span>
             <textarea name="Description4" rows="4" placeholder="Example Text"></textarea>
-        </div>
-   
+        </div>  
 </div>
-
 <!--Skills-->
 <div class="skills">
     <div class="title">Skills</div>
@@ -127,19 +107,14 @@
         <div class="input_part">    
             <span class="Description">Description</span>
             <textarea name="Description5" rows="4" placeholder="Example Text"></textarea>
-        </div>
-  
-</div>
-    
+        </div>  
+</div>    
 <div>
-
 <label id="display" style=" color: red;"></label>
-    <input type="submit"  onclick=" return  datacheck()" value="Save">
-    
+<input type="submit"  onclick=" return  datacheck()" value="Save"> 
 </div>
 </div>
 </form>
-
 <script>
     function datacheck (){
 
@@ -206,13 +181,9 @@
 
          return true;
          alert("user profile has been created sucsessfullly");
-
-
     }
 </script>
 
 </div>
-
-
 </body>
 </html>

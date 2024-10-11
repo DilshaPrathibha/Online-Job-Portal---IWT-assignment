@@ -2,11 +2,7 @@
 session_start();
 require "config.php";
 
-// Enable error reporting for debugging
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
-if (isset($_POST['username']) && isset($_POST['spassword'])) {
+if (isset($_POST['uname']) && isset($_POST['password'])) {
 
     function validate($data) {
         $data = trim($data);
@@ -15,8 +11,8 @@ if (isset($_POST['username']) && isset($_POST['spassword'])) {
         return $data;
     }
 
-    $uname = validate($_POST['username']);
-    $pass = validate($_POST['spassword']);
+    $uname = validate($_POST['uname']);
+    $pass = validate($_POST['password']);
 
     if (empty($uname)) {
         header("Location: Login.php?error=User Name is required");
@@ -26,28 +22,26 @@ if (isset($_POST['username']) && isset($_POST['spassword'])) {
         exit();
     }
 
-    // Use prepared statements to prevent SQL injection
-    $stmt = $con->prepare("SELECT * FROM users WHERE username = ? AND spassword = ?");
-    $stmt->bind_param("ss", $uname, $pass);
-    $stmt->execute();
-    $result = $stmt->get_result();
+    $sql = "SELECT * FROM users WHERE user_name='$uname' AND password='$pass'";
+    $result = mysqli_query($con, $sql);
 
-    if ($result->num_rows === 1) {
-        $row = $result->fetch_assoc();
+    if (mysqli_num_rows($result) == 1) {
+        $row = mysqli_fetch_assoc($result);
         
-        if ($row['username'] === "sandy" && $row['spassword'] === '1212') {
+        if ($row['user_name'] === "sandy" && $row['password'] === '1212') {
             echo "Logged In!";
-            $_SESSION['user_name'] = $row['username'];
+            $_SESSION['user_name'] = $row['user_name'];
             $_SESSION['name'] = $row['name'];
             $_SESSION['id'] = $row['id'];
             header("Location: http://localhost/jobsadawiya/Sandeepa/adminDashboard/index.php");
             exit();
-        } else if ($row['username'] === $uname && $row['spassword'] === $pass) {
+
+        } else if ($row['user_name'] === $uname && $row['password'] === $pass) {
             echo "Logged In!";
-            $_SESSION['user_name'] = $row['username'];
+            $_SESSION['user_name'] = $row['user_name'];
             $_SESSION['name'] = $row['name'];
             $_SESSION['id'] = $row['id'];
-            header("Location: user_account_page.php");
+            header("Location: http://localhost/jobsadawiya/Sandeepa/Shamal/user_account_page.php");
             exit();
         } else {
             header("Location: Login.php?error=Incorrect User Name or Password");
@@ -57,9 +51,5 @@ if (isset($_POST['username']) && isset($_POST['spassword'])) {
         header("Location: Login.php?error=Incorrect User Name or Password");
         exit();
     }
-} else {
-    header("Location: Login.php?error=Please fill in both fields");
-    exit();
 }
-
 ?>

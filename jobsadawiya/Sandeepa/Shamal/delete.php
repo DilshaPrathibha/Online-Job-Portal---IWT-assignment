@@ -1,9 +1,9 @@
 <?php
  
  require 'config.php'; 
- $degree = $_POST["degree"];
+ $nic = $_POST["nic"];
  $id = $_POST["id"];
- $sql="DELETE FROM sdeveloper where Degree='$degree'";
+ $sql="DELETE FROM sdeveloper where NIC='$nic'";
   if($con->query($sql)) 
   {
     echo "Deleted succefully";

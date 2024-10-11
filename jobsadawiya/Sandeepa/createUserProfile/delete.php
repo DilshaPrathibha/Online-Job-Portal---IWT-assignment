@@ -4,8 +4,6 @@
 </head>    
 <body> 
 
-
-
 <?php
 
 require 'config.php';
@@ -25,6 +23,8 @@ else
 {
     echo "Not success";
 }
+
+$con->close();
 
 ?>
 

@@ -25,6 +25,7 @@
                         <li><a href="../Shamal/index.php">Internship</a></li>
                         <li><a href="../Shamal/Login.php">Dashboard</a></li>
                         <li><a href="../Bupathifnl/signup.php">SignUp</a></li>
+                        <!--<li><a href="../Shamal/Login.php">Login</a></li>-->
                         <li><a href="../createUserProfile/create profile.php">CreateUserProfile</a></li>
                         </ul>
                 </div>
@@ -43,10 +44,10 @@
             <?php } ?>
     
                 <label>User Name</label>
-                <input type="text" name="username" >
+                <input type="text" name="uname" >
     
                 <label>Password</label>
-                <input type="password" name="spassword" >
+                <input type="password" name="password" >
     
                 <br><br>
     

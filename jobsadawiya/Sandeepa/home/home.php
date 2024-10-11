@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <!--Boxing CSS-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
-     rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet" />
+    <!--navbar css-->
     <link rel="stylesheet" href="navbar.css">
+    <!--external css-->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -27,7 +28,6 @@
                         <li><a href="../Shamal/index.php">Internship</a></li>
                         <li><a href="../Shamal/Login.php">Dashboard</a></li>
                         <li><a href="../Bupathifnl/signup.php">SignUp</a></li>
-                        <!--<li><a href="../Shamal/Login.php">Login</a></li>-->
                         <li><a href="../createUserProfile/create profile.php">CreateUserProfile</a></li>
                     </ul>
                 </div>
@@ -82,7 +82,6 @@
         <div class="more">
             <a href="http://localhost/jobsadawiya/Sandeepa/Dilsha/find.php"><button>More</button></a>
         </div>
-
     </div>
     <div class="jobs">
         <div class="title">
@@ -111,7 +110,6 @@
         <div class="more">
             <a href="http://localhost/jobsadawiya/Sandeepa/Dilsha/find.php"><button>More</button></a>
         </div>
-
     </div>
     <div class="jobs">
         <div class="title">
@@ -134,7 +132,6 @@
         <div class="more">
             <a href="http://localhost/jobsadawiya/Sandeepa/Dilsha/find.php"><button>More</button></a>
         </div>
-
     </div>
     <div class="post">
         <div class="container">
@@ -196,6 +193,5 @@
     <div class="copyright">
         <p>Copyright <i class='bx bx-copyright'></i> MyAwesomeSite 2024. All rights reserved.</p>
     </div>
-
 </body>
 </html>

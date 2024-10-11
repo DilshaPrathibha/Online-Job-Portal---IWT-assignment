@@ -25,31 +25,28 @@
                         <li><a href="../Shamal/index.php">Internship</a></li>
                         <li><a href="../Shamal/Login.php">Dashboard</a></li>
                         <li><a href="../Bupathifnl/signup.php">SignUp</a></li>
-                        <!--<li><a href="../Shamal/Login.php">Login</a></li>-->
                         <li><a href="../createUserProfile/create profile.php">CreateUserProfile</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
     </div>
-        <?php
+    <?php
 
         require 'config.php';  
   
-        ?>
+    ?>
         
-    
-        
-         <div id="con1">
-        <h3 id="pragh">Delete Info:</h3>
-        <form method="post"action=delete.php>
-            <label>User ID</label>
-            <input type="text" name="uid"><br>
+    <div id="con1" style="margin-top:100px;">
+    <h3 id="pragh">Delete Info:</h3>
+    <form method="post"action=delete.php>
+    <label>User ID</label>
+    <input type="text" name="uid"><br>
            
-        
-       <button style="margin-top:40px;" onclick="return conf()" >Delete</button>
-       <button>Cancel</button>
-       <script>
+    <button style="margin-top:40px;" onclick="return conf()" >Delete</button>
+    <button>Cancel</button>
+
+    <script>
         function conf(){
             confirm("do you wish to proceed");
         }
@@ -57,46 +54,7 @@
         
     </div>
 
-</form>
-</div>
-<div class="footer-bar" style="margin-top:40px"> 
-        <div class="container">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>JobAdawiya</h4>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Post a Job</a></li>
-                        <li><a href="#">Find a Job</a></li>
-                        <li><a href="#">Intership</a></li>
-                        <li><a href="#">Sign up</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Get Help</h4>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">payment options</a></li>
-                        <li><a href="#">www.JobsAdawiya@gmail.com</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-                            <a href="#"><i class='bx bxl-instagram'></i></a>
-                            <a href="#"><i class='bx bxl-linkedin'></i></a>
-                            <a href="#"><i class='bx bxl-twitter'></i></a>
-                            <a href="#"><i class='bx bxl-youtube'></i></a>
-                    </div>  
-                </div>
-            </div>
-        </div>
+    </form>
     </div>
-    <div class="copyright">
-        <p>Copyright <i class='bx bx-copyright'></i> MyAwesomeSite 2024. All rights reserved.</p>
-    </div>
     </body>
 </html>

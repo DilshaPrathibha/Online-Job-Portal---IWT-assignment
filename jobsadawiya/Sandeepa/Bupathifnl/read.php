@@ -1,6 +1,6 @@
 
 <a href="http://localhost/jobsadawiya/Sandeepa/adminDashboard/index.php"><button style="padding:8px 10px; margin: 8px 8px">
-            Back to Home <i class='bx bx-home'></i></button></a>
+Back to Home <i class='bx bx-home'></i></button></a>
 
 
 <?php

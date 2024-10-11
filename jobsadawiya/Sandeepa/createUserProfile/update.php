@@ -64,6 +64,8 @@ if(
             echo "not updated";
          }
     }
+
+    $con->close();
    
 
 

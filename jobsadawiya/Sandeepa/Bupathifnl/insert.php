@@ -6,7 +6,7 @@ $uname=$_POST["uname"];
 $pass=$_POST["password"];
 
 
-$sql="INSERT INTO users VALUES('','', '','$uname','','','','$pass','','','')";
+$sql = "INSERT INTO users (user_name, password) VALUES ('$uname', '$pass')";
 
 if($conn->query($sql))
 {echo "<script>

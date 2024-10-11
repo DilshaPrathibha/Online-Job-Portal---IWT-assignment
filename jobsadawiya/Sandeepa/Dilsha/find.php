@@ -38,7 +38,7 @@ if ($workFromHome) {
 // Execute the query
 $result = $conn->query($sql);
 
-$jobs = []; // empty array
+$jobs = [];
 
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
@@ -120,11 +120,11 @@ if ($result->num_rows > 0) {
                 </p>
 
                 <div class="job-listings" id="job-listings">
-                    
+                    <!-- using js -->
                 </div>
 
                 <div class="pagination" id="pagination">
-                    <!-- for Pagination  -->
+                    <!-- js using for Pagination  -->
                 </div>
             </section>
         </div>
@@ -164,8 +164,6 @@ if ($result->num_rows > 0) {
         });
     };
 
-
-
     const displayPagination = () => {
         const totalPages = Math.ceil(jobs.length / jobsPerPage);
         const pagination = document.getElementById('pagination');
@@ -200,8 +198,6 @@ if ($result->num_rows > 0) {
     displayJobs(currentPage);
     displayPagination();
 
-
-    
 
     window.addEventListener('scroll', () => {
     const filters = document.querySelector('.filters');

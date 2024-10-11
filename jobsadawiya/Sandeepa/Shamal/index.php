@@ -16,7 +16,7 @@
             <nav>
                 <div class="menu">
                     <div class="logo">
-                        <a href="#">Jobs අඩවිය</a>
+                        <a href="#">Jobs Adawiya</a>
                     </div>
                     <ul>
                     <li><a href="../home/home.php">Home</a></li>
@@ -37,13 +37,25 @@
 
 
 
-       
+        <diV id="con2" style="margin-left:45px; margin-top:20px;">
+        <h1 >Our Internships</h1>
+            <img src="job logo.png" style="width:100px; height:auto;">
+            <p>Struggeling to find right candidate?</p>
+            <p>Try Us out!</p>
+            <a href="../Malith/package.php" style="text-decoration:none; "><button style="margin-top:20px; border-radius:30px">Upgrade to <br> <span style="font-size:15px;">Premium<span></button></a>
+         </diV>       
+
+
     
          <div id="con1">
 
         <header>Software Developer Internship</header>
 
         <form method="post"class="form"action=insert.php>
+
+            <label>Enter your NIC
+            </label>
+            <textarea name="nic" id="nic"></textarea><br>
 
             <label>1. Do you possess a Bachelor's degree / diploma in computer
                 science / information technology or related field?</label>
@@ -57,7 +69,7 @@
             <input type="text" name="gpa" id="gpa"><br>
 
             <label>4. If we decide to hire you, how soon can you join? </label>
-            <textarea type="text" name="hire"  id="hire" > </textarea><br>
+            <textarea name="hire" name="hire"  id="hire" > </textarea><br>
 
             <label>5. Do you have your own laptop? If you were chosen are
                 you able to bring that to work daily?</label>

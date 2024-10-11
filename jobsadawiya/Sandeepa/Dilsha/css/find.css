@@ -27,7 +27,9 @@ main {
 */
 
     /*margin-top: 20px;*/
- 
+
+    padding-top: -20px;
+     
 
     background-color: white;
     border-radius: 20px;
@@ -81,6 +83,8 @@ main {
 
 .filters {
 
+
+
     width: 25%;
     padding: 20px;
     background-color: white;
@@ -124,6 +128,7 @@ main {
     
 }
 
+/* Job Results Section */
 .job-results {
     width: 70%;
 }
@@ -174,6 +179,7 @@ main {
     border-radius: 10px;
 }
 
+/* Layout for Main Content */
 .content {
     display: flex;
     justify-content: space-between;
@@ -194,6 +200,7 @@ main {
 .apply-btn:hover {
     background-color: #1477b9;
 }
+
 
 /* Responsive*/
 @media (max-width: 800px) {

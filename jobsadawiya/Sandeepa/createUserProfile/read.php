@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="navbar.css">
 
     <style>
+        button{
+            padding:5px 8px;
+            margin:5px 10px;
+            width:80px;
+            border-radius:8px;
+        }
+
         button:hover
         {
         background: #000;
@@ -16,8 +23,20 @@
 </head>    
 <body>    
 
-        <a href="http://localhost/jobsadawiya/Sandeepa/home/home.php"><button style="padding:8px 10px; margin: 8px 8px">
-            Back to Home <i class='bx bx-home'></i></button></a>
+<div class="btn" style="display: flex;">
+
+<a href="http://localhost/jobsadawiya/Sandeepa/Shamal/user_account_page.php">
+<button style="margin-right: 5px;">Back</button></a>
+
+<form method="post" action="updateUserProfile.php" >
+<button style="margin-right: 5px; background-color: green;">Update</button>
+</form>
+
+<form method="post" action="deleteUserProfile.php">
+<button style="margin-right: 5px; background-color: red;">Delete</button>
+</form>
+
+</div>
 
 
     <div>
@@ -107,50 +126,6 @@ $con->close();
 
 
 ?>
-
-<form method="post" action="updateUserProfile.php">
-
-
-    <button style="
-    font-size: 15px;
-    padding: 5px 5px 5px 5px;
-    margin-top:10px;
-    margin-bottom:40px;
-    width: 100px;
-    border-radius: 6px;
-    text-decoration: none;
-    background-color: #fff;
-    color: #000;
-    display: flex;
-    display:inline;
-    transition: background 0.5s;
-">Update</button>
-
-</form>
-
-<form method="post" action="deleteUserProfile.php">
-
-
-<button style="
-    font-size: 15px;
-    padding: 5px 5px 5px 5px;
-    transition: background 0.5s;
-    margin-top:-10px;
-    margin-bottom:40px;
-    width: 100px;
-    border-radius: 6px;
-    text-decoration: none;
-    background-color: #fff;
-    color: #000;
-    display: inline;
-">Delete</button>
-
-</form>
-
-
-    </div>
-
-
 
 
 

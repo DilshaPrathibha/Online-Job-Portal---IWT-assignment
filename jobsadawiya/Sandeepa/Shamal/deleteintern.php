@@ -14,7 +14,7 @@
             <nav>
                 <div class="menu">
                     <div class="logo">
-                        <a href="#">Jobs අඩවිය</a>
+                        <a href="#">Jobs Adawiya</a>
                     </div>
                     <ul>
                         <li><a href="../home/home.php">Home</a></li>
@@ -39,8 +39,8 @@
          <div id="con1">
         <h3 id="pragh">Delete Software Developer Internship</h3>
         <form method="post"action=delete.php>
-            <label>Degree</label>
-            <input type="text" name="degree"><br>
+            <label>NIC</label>
+            <input type="text" name="nic"><br>
            
         <h3 id="pragh">Delete Customer care assistant person<h3>
             <label>ID</label>

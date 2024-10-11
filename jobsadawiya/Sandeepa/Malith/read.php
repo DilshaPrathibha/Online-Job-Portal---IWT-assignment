@@ -1,12 +1,27 @@
 <html>
 <head>
     <link rel="stylesheet" href="readtable.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet" />
 </head>    
 <body>    
 
 
-<a href="http://localhost/jobsadawiya/Sandeepa/home/home.php"><button style="padding:8px 10px; margin: 8px 8px">
-            Back to Home <i class='bx bx-home'></i></button></a>
+
+
+<div class="btn" style="display: flex;">
+
+    <a href="http://localhost/jobsadawiya/Sandeepa/Shamal/user_account_page.php">
+    <button style="margin-right: 5px;">Back</button></a>
+
+    <form method="post" action="postajobupdate.php" >
+    <button style="margin-right: 5px; background-color: green;">Update</button>
+    </form>
+    
+    <form method="post" action="postajobdelete.php">
+    <button style="margin-right: 5px; background-color: red;">Delete</button>
+    </form>
+
+</div>
 
 
 <?php
@@ -85,13 +100,7 @@ if ($result_company) {
 $con->close();
 ?>
 
-<form method="post" action="postajobupdate.php">
-    <button>Update</button>
-</form>
 
-<form method="post" action="postajobdelete.php">
-    <button>Delete</button>
-</form>
 
 </body>
 </html>

@@ -203,9 +203,9 @@
 
 </form>
 
-<div  >
-      <div  style="height: 60px; width: 250px; border-radius: 15px; box-shadow: 3px 3px 5px; background-color: rgb(120, 120, 120); font-size: xx-large; color: rgb(9, 9, 9);" >
-      <label id="displayy" style="height: 60px; width: 240px;"></label><br>
+<div style = "margin: auto; padding : 5px; background-color:rgba(49, 48, 47, 0.99); width:270px; border-radius: 10px;"  >
+      <div  style="height: 60px; width: 250px; border-radius: 15px; box-shadow: 3px 3px 5px; background-color: rgb(120, 120, 120); font-size: xx-large; color: rgb(9, 9, 9); margin-bottom:5px;" >
+      <label id="displayy" style="height: 60px; width: 240px; margin-bott0m:5px;"></label><br>
       </div>
       
       

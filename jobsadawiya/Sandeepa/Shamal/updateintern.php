@@ -16,7 +16,7 @@
             <nav>
                 <div class="menu">
                     <div class="logo">
-                        <a href="#">Jobs අඩවිය</a>
+                        <a href="#">Jobs Adawiya</a>
                     </div>
                     <ul>
                         <li><a href="../home/home.php">Home</a></li>
@@ -52,9 +52,13 @@
          </diV>
          <div id="con1">
 
-        <header>Software Developer Internship</header>
+        <header>Update Software Developer Internship</header>
 
         <form method="post"class="form"action="update.php">
+
+            <label>Enter your NIC
+            </label>
+            <textarea name="nic" id="nic"></textarea><br>
 
             <label>1. Do you possess a Bachelor's degree / diploma in computer
                 science / information technology or related field?</label>
